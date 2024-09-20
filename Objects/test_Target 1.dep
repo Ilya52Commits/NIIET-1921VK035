@@ -1,0 +1,898 @@
+Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup\system_K1921VK035.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\system_k1921vk035.o --omf_browse .\objects\system_k1921vk035.crf --depend .\objects\system_k1921vk035.d)
+I (startup\system_K1921VK035.h)(0x63CE4D70)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (startup\K1921VK035.h)(0x5D0B415A)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+F (.\startup\startup_K1921VK035.s)(0x5C9B2C2C)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "K1921VK035 SETA 1"--list .\listings\startup_k1921vk035.lst --xref -o .\objects\startup_k1921vk035.o --depend .\objects\startup_k1921vk035.d)
+F (.\src\main.c)(0x63DB82F0)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (src\..\modbus\mb.h)(0x4578834A)
+I (src\..\modbus\port.h)(0x63C68E1E)
+I (src\..\modbus\mbport.h)(0x63C68918)
+I (src\..\modbus\mbproto.h)(0x4578834A)
+I (src\fw_updater.h)(0x63DBA9AF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C27DF8)
+I (src\ComDef.h)(0x63D9FA36)
+I (src\Processor.h)(0x63D0E4B2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+F (.\src\Processor.c)(0x63DB81CA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\processor.o --omf_browse .\objects\processor.crf --depend .\objects\processor.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (src\Processor.h)(0x63D0E4B2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (src\..\modbus\mbdefs.h)(0x63DB818C)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C27DF8)
+I (src\..\modbus\mb.h)(0x4578834A)
+I (src\..\modbus\port.h)(0x63C68E1E)
+I (src\..\modbus\mbport.h)(0x63C68918)
+I (src\..\modbus\mbproto.h)(0x4578834A)
+I (src\..\modbus\mbcrc.h)(0x4578834A)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (src\ComDef.h)(0x63D9FA36)
+F (.\src\VK035_it.c)(0x63D0F28E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\vk035_it.o --omf_browse .\objects\vk035_it.crf --depend .\objects\vk035_it.d)
+I (src\ComDef.h)(0x63D9FA36)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\src\fw_updater.c)(0x63DB96D8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\fw_updater.o --omf_browse .\objects\fw_updater.crf --depend .\objects\fw_updater.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (src\fw_updater.h)(0x63DBA9AF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C27DF8)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (src\ComDef.h)(0x63D9FA36)
+I (src\..\modbus\mb.h)(0x4578834A)
+I (src\..\modbus\port.h)(0x63C68E1E)
+I (src\..\modbus\mbport.h)(0x63C68918)
+I (src\..\modbus\mbproto.h)(0x4578834A)
+F (.\src\update_flash_fw.c)(0x63DBA8BD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\update_flash_fw.o --omf_browse .\objects\update_flash_fw.crf --depend .\objects\update_flash_fw.d)
+I (src\fw_updater.h)(0x63DBA9AF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C27DF8)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (src\ComDef.h)(0x63D9FA36)
+F (.\periph\plib035_adc.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_adc.o --omf_browse .\objects\plib035_adc.crf --depend .\objects\plib035_adc.d)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_can.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_can.o --omf_browse .\objects\plib035_can.crf --depend .\objects\plib035_can.d)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_dma.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_dma.o --omf_browse .\objects\plib035_dma.crf --depend .\objects\plib035_dma.d)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_ecap.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_ecap.o --omf_browse .\objects\plib035_ecap.crf --depend .\objects\plib035_ecap.d)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_gpio.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_gpio.o --omf_browse .\objects\plib035_gpio.crf --depend .\objects\plib035_gpio.d)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_i2c.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_i2c.o --omf_browse .\objects\plib035_i2c.crf --depend .\objects\plib035_i2c.d)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_mflash.c)(0x5D0B4A32)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_mflash.o --omf_browse .\objects\plib035_mflash.crf --depend .\objects\plib035_mflash.d)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_pmu.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_pmu.o --omf_browse .\objects\plib035_pmu.crf --depend .\objects\plib035_pmu.d)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_pwm.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_pwm.o --omf_browse .\objects\plib035_pwm.crf --depend .\objects\plib035_pwm.d)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_qep.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_qep.o --omf_browse .\objects\plib035_qep.crf --depend .\objects\plib035_qep.d)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_rcu.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_rcu.o --omf_browse .\objects\plib035_rcu.crf --depend .\objects\plib035_rcu.d)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_spi.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_spi.o --omf_browse .\objects\plib035_spi.crf --depend .\objects\plib035_spi.d)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_tmr.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_tmr.o --omf_browse .\objects\plib035_tmr.crf --depend .\objects\plib035_tmr.d)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_uart.c)(0x63C1308E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_uart.o --omf_browse .\objects\plib035_uart.crf --depend .\objects\plib035_uart.d)
+I (periph\plib035_uart.h)(0x5D021698)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\periph\plib035_wdt.c)(0x5C9B2C2C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\plib035_wdt.o --omf_browse .\objects\plib035_wdt.crf --depend .\objects\plib035_wdt.d)
+I (periph\plib035_wdt.h)(0x5C9B2C2C)
+I (periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (periph\plib035_assert.h)(0x5C9B2C2C)
+I (periph\plib035_version.h)(0x5C9B2C2C)
+I (periph\plib035_conf.h)(0x5C9B2C2C)
+I (periph\plib035_adc.h)(0x5C9B2C2C)
+I (periph\plib035_can.h)(0x5C9B2C2C)
+I (periph\plib035_dma.h)(0x5C9B2C2C)
+I (periph\plib035_ecap.h)(0x5C9B2C2C)
+I (periph\plib035_gpio.h)(0x5C9B2C2C)
+I (periph\plib035_i2c.h)(0x5C9B2C2C)
+I (periph\plib035_mflash.h)(0x5D0B4AA2)
+I (periph\plib035_pmu.h)(0x5C9B2C2C)
+I (periph\plib035_pwm.h)(0x5C9B2C2C)
+I (periph\plib035_qep.h)(0x5C9B2C2C)
+I (periph\plib035_rcu.h)(0x63C68E1E)
+I (periph\plib035_spi.h)(0x5C9B2C2C)
+I (periph\plib035_tmr.h)(0x5C9B2C2C)
+I (periph\plib035_uart.h)(0x5D021698)
+F (.\Modbus\mb.c)(0x63CE397E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mb.o --omf_browse .\objects\mb.crf --depend .\objects\mb.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbfunc.h)(0x4578834A)
+I (Modbus\mbrtu.h)(0x4578834A)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (.\src\ComDef.h)(0x63D9FA36)
+F (.\Modbus\mbascii.c)(0x4C0B98CC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbascii.o --omf_browse .\objects\mbascii.crf --depend .\objects\mbascii.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+I (Modbus\mbascii.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbcrc.h)(0x4578834A)
+F (.\Modbus\mbcrc.c)(0x45D8D834)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbcrc.o --omf_browse .\objects\mbcrc.crf --depend .\objects\mbcrc.d)
+I (Modbus\port.h)(0x63C68E1E)
+F (.\Modbus\mbdefs.c)(0x63DB8198)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbdefs.o --omf_browse .\objects\mbdefs.crf --depend .\objects\mbdefs.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\mbdefs.h)(0x63DB818C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C27DF8)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (Modbus\mbframe.h)(0x4578834A)
+I (.\src\ComDef.h)(0x63D9FA36)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\Modbus\mbfunccoils.c)(0x45D8D774)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfunccoils.o --omf_browse .\objects\mbfunccoils.crf --depend .\objects\mbfunccoils.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+F (.\Modbus\mbfuncdiag.c)(0x4578834A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfuncdiag.o --omf_browse .\objects\mbfuncdiag.crf --depend .\objects\mbfuncdiag.d)
+F (.\Modbus\mbfuncdisc.c)(0x45D8D7A2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfuncdisc.o --omf_browse .\objects\mbfuncdisc.crf --depend .\objects\mbfuncdisc.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+F (.\Modbus\mbfuncholding.c)(0x45D8D7B6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfuncholding.o --omf_browse .\objects\mbfuncholding.crf --depend .\objects\mbfuncholding.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+F (.\Modbus\mbfuncinput.c)(0x46E7AE4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfuncinput.o --omf_browse .\objects\mbfuncinput.crf --depend .\objects\mbfuncinput.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+F (.\Modbus\mbfuncother.c)(0x4578834A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbfuncother.o --omf_browse .\objects\mbfuncother.crf --depend .\objects\mbfuncother.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+F (.\Modbus\mbrtu.c)(0x63D11A2A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbrtu.o --omf_browse .\objects\mbrtu.crf --depend .\objects\mbrtu.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbrtu.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+I (Modbus\mbcrc.h)(0x4578834A)
+I (.\src\ComDef.h)(0x63D9FA36)
+F (.\Modbus\mbtcp.c)(0x4578834A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbtcp.o --omf_browse .\objects\mbtcp.crf --depend .\objects\mbtcp.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (Modbus\mbconfig.h)(0x55E7ED6C)
+I (Modbus\mbtcp.h)(0x4578834A)
+I (Modbus\mbframe.h)(0x4578834A)
+F (.\Modbus\mbutils.c)(0x63DB6226)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\mbutils.o --omf_browse .\objects\mbutils.crf --depend .\objects\mbutils.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C27DF8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+F (.\Modbus\portevent.c)(0x44EB86A2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\portevent.o --omf_browse .\objects\portevent.crf --depend .\objects\portevent.d)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+F (.\Modbus\portother.c)(0x63C68D5A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\portother.o --omf_browse .\objects\portother.crf --depend .\objects\portother.d)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\port.h)(0x63C68E1E)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+F (.\Modbus\portserial.c)(0x63CF8120)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\portserial.o --omf_browse .\objects\portserial.crf --depend .\objects\portserial.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C27DF8)
+I (Modbus\port.h)(0x63C68E1E)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)
+F (.\Modbus\porttimer.c)(0x63D0AE90)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\bsp -I.\CMSIS -I.\retarget -I.\src -I.\startup -I.\periph-I "D:\LVOV\KEIL\NIIET\TEST [01.01.01]\RTE"-I C:\Keil_v5\ARM\PACK\NIIET\K1921VK035_DFP\2.0.5\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DK1921VK035 -DRETARGET -DRETARGET_USE_UART -DSYSCLK_PLL -DCKO_NONE -DOSECLK_VAL="16000000"-o .\objects\porttimer.o --omf_browse .\objects\porttimer.crf --depend .\objects\porttimer.d)
+I (Modbus\port.h)(0x63C68E1E)
+I (.\periph\plib035_tmr.h)(0x5C9B2C2C)
+I (.\periph\plib035.h)(0x5C9B2C2C)
+I (.\startup\K1921VK035.h)(0x5D0B415A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C27DF8)
+I (.\CMSIS\core_cm4.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_version.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_compiler.h)(0x5C9B2C2C)
+I (.\CMSIS\cmsis_armcc.h)(0x63CE4D90)
+I (.\CMSIS\mpu_armv7.h)(0x5C9B2C2C)
+I (.\startup\system_K1921VK035.h)(0x63CE4D70)
+I (.\periph\plib035_assert.h)(0x5C9B2C2C)
+I (.\periph\plib035_version.h)(0x5C9B2C2C)
+I (.\periph\plib035_conf.h)(0x5C9B2C2C)
+I (.\periph\plib035_adc.h)(0x5C9B2C2C)
+I (.\periph\plib035_can.h)(0x5C9B2C2C)
+I (.\periph\plib035_dma.h)(0x5C9B2C2C)
+I (.\periph\plib035_ecap.h)(0x5C9B2C2C)
+I (.\periph\plib035_gpio.h)(0x5C9B2C2C)
+I (.\periph\plib035_i2c.h)(0x5C9B2C2C)
+I (.\periph\plib035_mflash.h)(0x5D0B4AA2)
+I (.\periph\plib035_pmu.h)(0x5C9B2C2C)
+I (.\periph\plib035_pwm.h)(0x5C9B2C2C)
+I (.\periph\plib035_qep.h)(0x5C9B2C2C)
+I (.\periph\plib035_rcu.h)(0x63C68E1E)
+I (.\periph\plib035_spi.h)(0x5C9B2C2C)
+I (.\periph\plib035_uart.h)(0x5D021698)
+I (.\periph\plib035_wdt.h)(0x5C9B2C2C)
+I (Modbus\mb.h)(0x4578834A)
+I (Modbus\mbport.h)(0x63C68918)
+I (Modbus\mbproto.h)(0x4578834A)

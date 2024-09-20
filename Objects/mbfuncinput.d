@@ -1,0 +1,9 @@
+.\objects\mbfuncinput.o: Modbus\mbfuncinput.c
+.\objects\mbfuncinput.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mbfuncinput.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mbfuncinput.o: Modbus\port.h
+.\objects\mbfuncinput.o: Modbus\mb.h
+.\objects\mbfuncinput.o: Modbus\mbport.h
+.\objects\mbfuncinput.o: Modbus\mbproto.h
+.\objects\mbfuncinput.o: Modbus\mbframe.h
+.\objects\mbfuncinput.o: Modbus\mbconfig.h

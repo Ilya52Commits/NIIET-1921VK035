@@ -1,0 +1,12 @@
+.\objects\boot_flash.o: src\boot_flash.c
+.\objects\boot_flash.o: src\boot_flash.h
+.\objects\boot_flash.o: src\boot_conf.h
+.\objects\boot_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\boot_flash.o: .\startup\K1921VK035.h
+.\objects\boot_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\boot_flash.o: .\CMSIS\core_cm4.h
+.\objects\boot_flash.o: .\CMSIS\cmsis_version.h
+.\objects\boot_flash.o: .\CMSIS\cmsis_compiler.h
+.\objects\boot_flash.o: .\CMSIS\cmsis_armcc.h
+.\objects\boot_flash.o: .\CMSIS\mpu_armv7.h
+.\objects\boot_flash.o: .\startup\system_K1921VK035.h

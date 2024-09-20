@@ -1,0 +1,1529 @@
+Component: ARM Compiler 5.05 update 2 (build 169) Tool: armlink [4d0f33]
+
+==============================================================================
+
+Section Cross References
+
+    system_k1921vk035.o(i.SystemCoreClockUpdate) refers to system_k1921vk035.o(.data) for SystemCoreClock
+    system_k1921vk035.o(i.SystemInit) refers to system_k1921vk035.o(i.ClkInit) for ClkInit
+    system_k1921vk035.o(i.SystemInit) refers to system_k1921vk035.o(i.FPUInit) for FPUInit
+    startup_k1921vk035.o(RESET) refers to startup_k1921vk035.o(STACK) for __initial_sp
+    startup_k1921vk035.o(RESET) refers to startup_k1921vk035.o(.text) for Reset_Handler
+    startup_k1921vk035.o(RESET) refers to vk035_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_k1921vk035.o(RESET) refers to porttimer.o(i.TMR0_IRQHandler) for TMR0_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART0_TD_IRQHandler) for UART0_TD_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART0_RX_IRQHandler) for UART0_RX_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART0_TX_IRQHandler) for UART0_TX_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART1_TD_IRQHandler) for UART1_TD_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART1_RX_IRQHandler) for UART1_RX_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART1_TX_IRQHandler) for UART1_TX_IRQHandler
+    startup_k1921vk035.o(RESET) refers to portserial.o(i.UART1_E_RT_IRQHandler) for UART1_E_RT_IRQHandler
+    startup_k1921vk035.o(RESET) refers to vk035_it.o(i.ADC_SEQ0_IRQHandler) for ADC_SEQ0_IRQHandler
+    startup_k1921vk035.o(RESET) refers to vk035_it.o(i.ADC_SEQ1_IRQHandler) for ADC_SEQ1_IRQHandler
+    startup_k1921vk035.o(.text) refers to system_k1921vk035.o(i.SystemInit) for SystemInit
+    startup_k1921vk035.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    main.o(i.adc_init) refers to plib035_rcu.o(i.RCU_GetADCClkFreq) for RCU_GetADCClkFreq
+    main.o(i.adc_init) refers to plib035_adc.o(i.ADC_SEQ_StructInit) for ADC_SEQ_StructInit
+    main.o(i.adc_init) refers to plib035_adc.o(i.ADC_SEQ_Init) for ADC_SEQ_Init
+    main.o(i.adc_init) refers to main.o(i.ADC_SEQ_SetRestartTimer) for ADC_SEQ_SetRestartTimer
+    main.o(i.adc_init) refers to main.o(i.ADC_SEQ_Cmd) for ADC_SEQ_Cmd
+    main.o(i.adc_init) refers to main.o(i.ADC_SEQ_ITConfig) for ADC_SEQ_ITConfig
+    main.o(i.adc_init) refers to main.o(i.ADC_SEQ_ITCmd) for ADC_SEQ_ITCmd
+    main.o(i.adc_init) refers to main.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    main.o(i.main) refers to plib035_rcu.o(i.RCU_SysClkChangeCmd) for RCU_SysClkChangeCmd
+    main.o(i.main) refers to plib035_rcu.o(i.RCU_PLL_AutoConfig) for RCU_PLL_AutoConfig
+    main.o(i.main) refers to system_k1921vk035.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    main.o(i.main) refers to processor.o(i.init_processor) for init_processor
+    main.o(i.main) refers to mb.o(i.eMBInit) for eMBInit
+    main.o(i.main) refers to mb.o(i.eMBEnable) for eMBEnable
+    main.o(i.main) refers to main.o(i.systick_init) for systick_init
+    main.o(i.main) refers to main.o(i.adc_init) for adc_init
+    main.o(i.main) refers to main.o(i.pwm_init) for pwm_init
+    main.o(i.main) refers to mb.o(i.eMBPoll) for eMBPoll
+    main.o(i.main) refers to fw_updater.o(i.perform_fw_update) for perform_fw_update
+    main.o(i.main) refers to processor.o(i.update_user_data) for update_user_data
+    main.o(i.main) refers to processor.o(i.check_user_data_page) for check_user_data_page
+    main.o(i.main) refers to main.o(i.__NVIC_SystemReset) for __NVIC_SystemReset
+    main.o(i.main) refers to main.o(i.perform_auto_addressing) for perform_auto_addressing
+    main.o(i.main) refers to processor.o(i.process_data) for process_data
+    main.o(i.main) refers to main.o(i.process_analog_output) for process_analog_output
+    main.o(i.main) refers to processor.o(.data) for copy
+    main.o(i.main) refers to mbdefs.o(.bss) for mb_input_regs
+    main.o(i.main) refers to main.o(.data) for mb_baudrate
+    main.o(i.main) refers to mbdefs.o(.data) for mb_coils
+    main.o(i.perform_auto_addressing) refers to mb.o(i.eMBDisable) for eMBDisable
+    main.o(i.perform_auto_addressing) refers to mb.o(i.eMBInit) for eMBInit
+    main.o(i.perform_auto_addressing) refers to mb.o(i.eMBEnable) for eMBEnable
+    main.o(i.perform_auto_addressing) refers to rand.o(.text) for srand
+    main.o(i.perform_auto_addressing) refers to mb.o(i.eMBPoll) for eMBPoll
+    main.o(i.perform_auto_addressing) refers to main.o(.data) for command_status
+    main.o(i.perform_auto_addressing) refers to mbdefs.o(.bss) for mb_holding_regs
+    main.o(i.process_analog_output) refers to processor.o(i.set_output_range) for set_output_range
+    main.o(i.process_analog_output) refers to main.o(i.PWM_CMP_SetCmpB) for PWM_CMP_SetCmpB
+    main.o(i.process_analog_output) refers to main.o(.data) for command_status
+    main.o(i.process_analog_output) refers to mbdefs.o(.data) for mb_discretes
+    main.o(i.process_analog_output) refers to processor.o(.data) for out1_Nmax
+    main.o(i.process_analog_output) refers to mbdefs.o(.bss) for mb_input_regs
+    main.o(i.pwm_init) refers to main.o(i.RCU_APBClkCmd) for RCU_APBClkCmd
+    main.o(i.pwm_init) refers to main.o(i.RCU_APBRstCmd) for RCU_APBRstCmd
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_TB_StructInit) for PWM_TB_StructInit
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_TB_Init) for PWM_TB_Init
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_CMP_StructInit) for PWM_CMP_StructInit
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_CMP_Init) for PWM_CMP_Init
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_AQ_StructInit) for PWM_AQ_StructInit
+    main.o(i.pwm_init) refers to plib035_pwm.o(i.PWM_AQ_Init) for PWM_AQ_Init
+    main.o(i.pwm_init) refers to plib035_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    main.o(i.pwm_init) refers to plib035_gpio.o(i.GPIO_Init) for GPIO_Init
+    main.o(i.systick_init) refers to system_k1921vk035.o(.data) for SystemCoreClock
+    main.o(i.timer_init) refers to main.o(i.RCU_APBClkCmd) for RCU_APBClkCmd
+    main.o(i.timer_init) refers to main.o(i.RCU_APBRstCmd) for RCU_APBRstCmd
+    main.o(i.timer_init) refers to plib035_tmr.o(i.TMR_PeriodConfig) for TMR_PeriodConfig
+    main.o(i.timer_init) refers to main.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    main.o(i.timer_init) refers to system_k1921vk035.o(.data) for SystemCoreClock
+    processor.o(i.check_user_data_page) refers to plib035_mflash.o(i.MFLASH_ReadData) for MFLASH_ReadData
+    processor.o(i.check_user_data_page) refers to memcmp.o(.text) for memcmp
+    processor.o(i.check_user_data_page) refers to processor.o(.bss) for user_data
+    processor.o(i.evaluate_derivative) refers to processor.o(.bss) for polynom_p1_factors
+    processor.o(i.evaluate_p_polynom) refers to processor.o(.bss) for polynom_p1_factors
+    processor.o(i.init_processor) refers to processor.o(i.read_user_data_page) for read_user_data_page
+    processor.o(i.init_processor) refers to processor.o(i.check_user_data_page) for check_user_data_page
+    processor.o(i.init_processor) refers to processor.o(i.write_user_data_page) for write_user_data_page
+    processor.o(i.init_processor) refers to memcpya.o(.text) for __aeabi_memcpy
+    processor.o(i.init_processor) refers to processor.o(.data) for p1_buf_index
+    processor.o(i.init_processor) refers to processor.o(.bss) for user_data
+    processor.o(i.init_processor) refers to main.o(.data) for mb_baudrate
+    processor.o(i.init_processor) refers to mbdefs.o(.bss) for mb_holding_regs
+    processor.o(i.polynom_value) refers to processor.o(.bss) for polynom_factors
+    processor.o(i.process_data) refers to processor.o(i.polynom_value) for polynom_value
+    processor.o(i.process_data) refers to processor.o(i.solve_polynom) for solve_polynom
+    processor.o(i.process_data) refers to main.o(.data) for systick_counter
+    processor.o(i.process_data) refers to processor.o(.data) for evaluation_period
+    processor.o(i.process_data) refers to mbdefs.o(.bss) for mb_input_regs
+    processor.o(i.process_data) refers to mbdefs.o(.data) for mb_discretes
+    processor.o(i.process_data) refers to processor.o(.bss) for polynom_p1_factors
+    processor.o(i.read_user_data_page) refers to plib035_mflash.o(i.MFLASH_ReadData) for MFLASH_ReadData
+    processor.o(i.read_user_data_page) refers to mbcrc.o(i.usMBCRC16) for usMBCRC16
+    processor.o(i.read_user_data_page) refers to processor.o(.bss) for user_data
+    processor.o(i.set_output_range) refers to processor.o(.bss) for out1_corr_table
+    processor.o(i.set_output_range) refers to processor.o(.data) for t1_adc_n
+    processor.o(i.solve_polynom) refers to processor.o(i.evaluate_p_polynom) for evaluate_p_polynom
+    processor.o(i.solve_polynom) refers to processor.o(i.evaluate_derivative) for evaluate_derivative
+    processor.o(i.solve_polynom) refers to processor.o(.bss) for polynom_p1_factors
+    processor.o(i.solve_polynom) refers to processor.o(.data) for err_out1
+    processor.o(i.update_user_data) refers to memcpya.o(.text) for __aeabi_memcpy
+    processor.o(i.update_user_data) refers to processor.o(i.write_user_data_page) for write_user_data_page
+    processor.o(i.update_user_data) refers to mbdefs.o(.bss) for mb_holding_regs
+    processor.o(i.update_user_data) refers to processor.o(.bss) for user_data
+    processor.o(i.write_user_data_page) refers to plib035_mflash.o(i.MFLASH_ErasePage) for MFLASH_ErasePage
+    processor.o(i.write_user_data_page) refers to mbcrc.o(i.usMBCRC16) for usMBCRC16
+    processor.o(i.write_user_data_page) refers to plib035_mflash.o(i.MFLASH_WriteData) for MFLASH_WriteData
+    processor.o(i.write_user_data_page) refers to processor.o(.bss) for user_data
+    vk035_it.o(i.ADC_SEQ0_IRQHandler) refers to vk035_it.o(i.ADC_SEQ_ITStatusClear) for ADC_SEQ_ITStatusClear
+    vk035_it.o(i.ADC_SEQ0_IRQHandler) refers to vk035_it.o(i.ADC_SEQ_GetFIFOData) for ADC_SEQ_GetFIFOData
+    vk035_it.o(i.ADC_SEQ0_IRQHandler) refers to processor.o(.data) for p1_buffer_full
+    vk035_it.o(i.ADC_SEQ0_IRQHandler) refers to processor.o(.bss) for p1_adc_buffer
+    vk035_it.o(i.ADC_SEQ1_IRQHandler) refers to vk035_it.o(i.ADC_SEQ_ITStatusClear) for ADC_SEQ_ITStatusClear
+    vk035_it.o(i.ADC_SEQ1_IRQHandler) refers to vk035_it.o(i.ADC_SEQ_GetFIFOData) for ADC_SEQ_GetFIFOData
+    vk035_it.o(i.ADC_SEQ1_IRQHandler) refers to processor.o(.data) for t1_buffer_full
+    vk035_it.o(i.ADC_SEQ1_IRQHandler) refers to processor.o(.bss) for t1_adc_buffer
+    vk035_it.o(i.SysTick_Handler) refers to main.o(.data) for system_status
+    fw_updater.o(i.erase_updater_page) refers to plib035_mflash.o(i.MFLASH_ErasePage) for MFLASH_ErasePage
+    fw_updater.o(i.erase_updater_page) refers to mbdefs.o(.data) for mb_discretes
+    fw_updater.o(i.perform_fw_update) refers to mb.o(i.eMBPoll) for eMBPoll
+    fw_updater.o(i.perform_fw_update) refers to fw_updater.o(i.erase_updater_page) for erase_updater_page
+    fw_updater.o(i.perform_fw_update) refers to fw_updater.o(i.write_buffer_to_page) for write_buffer_to_page
+    fw_updater.o(i.perform_fw_update) refers to fw_updater.o(i.read_buffer_from_page) for read_buffer_from_page
+    fw_updater.o(i.perform_fw_update) refers to update_flash_fw.o(RAMCODE) for write_new_fw
+    fw_updater.o(i.perform_fw_update) refers to main.o(.data) for system_status
+    fw_updater.o(i.perform_fw_update) refers to mbdefs.o(.data) for mb_coils
+    fw_updater.o(i.perform_fw_update) refers to mbdefs.o(.bss) for mb_holding_regs
+    fw_updater.o(i.read_buffer_from_page) refers to plib035_mflash.o(i.MFLASH_ReadData) for MFLASH_ReadData
+    fw_updater.o(i.read_buffer_from_page) refers to mbdefs.o(.bss) for mb_holding_regs
+    fw_updater.o(i.read_buffer_from_page) refers to mbdefs.o(.data) for mb_discretes
+    fw_updater.o(i.write_buffer_to_page) refers to plib035_mflash.o(i.MFLASH_WriteData) for MFLASH_WriteData
+    fw_updater.o(i.write_buffer_to_page) refers to memseta.o(.text) for __aeabi_memclr
+    fw_updater.o(i.write_buffer_to_page) refers to mbdefs.o(.bss) for mb_holding_regs
+    fw_updater.o(i.write_buffer_to_page) refers to mbdefs.o(.data) for mb_discretes
+    update_flash_fw.o(RAMCODE) refers to plib035_mflash.o(i.MFLASH_ErasePage) for MFLASH_ErasePage
+    update_flash_fw.o(RAMCODE) refers to plib035_mflash.o(i.MFLASH_ReadData) for MFLASH_ReadData
+    update_flash_fw.o(RAMCODE) refers to plib035_mflash.o(i.MFLASH_WriteData) for MFLASH_WriteData
+    plib035_adc.o(i.ADC_DeInit) refers to plib035_adc.o(i.RCU_ADCRstCmd) for RCU_ADCRstCmd
+    plib035_ecap.o(i.ECAP_DeInit) refers to plib035_ecap.o(i.RCU_APBRstCmd) for RCU_APBRstCmd
+    plib035_gpio.o(i.GPIO_DeInit) refers to plib035_gpio.o(i.RCU_AHBRstCmd) for RCU_AHBRstCmd
+    plib035_gpio.o(i.GPIO_DriveModeConfig) refers to plib035_gpio.o(i.GPIO_ModeConfig) for GPIO_ModeConfig
+    plib035_gpio.o(i.GPIO_InModeConfig) refers to plib035_gpio.o(i.GPIO_ModeConfig) for GPIO_ModeConfig
+    plib035_gpio.o(i.GPIO_Init) refers to plib035_gpio.o(i.GPIO_OutModeConfig) for GPIO_OutModeConfig
+    plib035_gpio.o(i.GPIO_Init) refers to plib035_gpio.o(i.GPIO_InModeConfig) for GPIO_InModeConfig
+    plib035_gpio.o(i.GPIO_Init) refers to plib035_gpio.o(i.GPIO_PullModeConfig) for GPIO_PullModeConfig
+    plib035_gpio.o(i.GPIO_Init) refers to plib035_gpio.o(i.GPIO_DriveModeConfig) for GPIO_DriveModeConfig
+    plib035_gpio.o(i.GPIO_OutModeConfig) refers to plib035_gpio.o(i.GPIO_ModeConfig) for GPIO_ModeConfig
+    plib035_gpio.o(i.GPIO_PullModeConfig) refers to plib035_gpio.o(i.GPIO_ModeConfig) for GPIO_ModeConfig
+    plib035_mflash.o(i.MFLASH_EraseFull) refers to plib035_mflash.o(i.MFLASH_SetCmd) for MFLASH_SetCmd
+    plib035_mflash.o(i.MFLASH_EraseFull) refers to plib035_mflash.o(i.MFLASH_BusyStatus) for MFLASH_BusyStatus
+    plib035_mflash.o(i.MFLASH_ErasePage) refers to plib035_mflash.o(i.MFLASH_SetAddr) for MFLASH_SetAddr
+    plib035_mflash.o(i.MFLASH_ErasePage) refers to plib035_mflash.o(i.MFLASH_SetCmd) for MFLASH_SetCmd
+    plib035_mflash.o(i.MFLASH_ErasePage) refers to plib035_mflash.o(i.MFLASH_BusyStatus) for MFLASH_BusyStatus
+    plib035_mflash.o(i.MFLASH_ReadData) refers to plib035_mflash.o(i.MFLASH_SetAddr) for MFLASH_SetAddr
+    plib035_mflash.o(i.MFLASH_ReadData) refers to plib035_mflash.o(i.MFLASH_SetCmd) for MFLASH_SetCmd
+    plib035_mflash.o(i.MFLASH_ReadData) refers to plib035_mflash.o(i.MFLASH_BusyStatus) for MFLASH_BusyStatus
+    plib035_mflash.o(i.MFLASH_WriteData) refers to plib035_mflash.o(i.MFLASH_SetAddr) for MFLASH_SetAddr
+    plib035_mflash.o(i.MFLASH_WriteData) refers to plib035_mflash.o(i.MFLASH_SetCmd) for MFLASH_SetCmd
+    plib035_mflash.o(i.MFLASH_WriteData) refers to plib035_mflash.o(i.MFLASH_BusyStatus) for MFLASH_BusyStatus
+    plib035_pwm.o(i.PWM_AQ_Init) refers to plib035_pwm.o(i.PWM_AQ_ActionAConfig) for PWM_AQ_ActionAConfig
+    plib035_pwm.o(i.PWM_AQ_Init) refers to plib035_pwm.o(i.PWM_AQ_ActionBConfig) for PWM_AQ_ActionBConfig
+    plib035_pwm.o(i.PWM_CMP_Init) refers to plib035_pwm.o(i.PWM_CMP_CmpALoadEventConfig) for PWM_CMP_CmpALoadEventConfig
+    plib035_pwm.o(i.PWM_CMP_Init) refers to plib035_pwm.o(i.PWM_CMP_CmpADirectLoadCmd) for PWM_CMP_CmpADirectLoadCmd
+    plib035_pwm.o(i.PWM_DeInit) refers to plib035_pwm.o(i.RCU_APBRstCmd) for RCU_APBRstCmd
+    plib035_qep.o(i.QEP_DeInit) refers to plib035_qep.o(i.RCU_APBRstCmd) for RCU_APBRstCmd
+    plib035_rcu.o(i.RCU_GetADCClkFreq) refers to plib035_rcu.o(i.getPeriphClkFreq) for getPeriphClkFreq
+    plib035_rcu.o(i.RCU_GetClkOutFreq) refers to plib035_rcu.o(i.getSysPeriphClkFreq) for getSysPeriphClkFreq
+    plib035_rcu.o(i.RCU_GetPLLDivClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLClkFreq) for RCU_GetPLLClkFreq
+    plib035_rcu.o(i.RCU_GetSPIClkFreq) refers to plib035_rcu.o(i.getPeriphClkFreq) for getPeriphClkFreq
+    plib035_rcu.o(i.RCU_GetSysClkFreq) refers to plib035_rcu.o(i.getSysClkFreq) for getSysClkFreq
+    plib035_rcu.o(i.RCU_GetTraceClkFreq) refers to plib035_rcu.o(i.getSysPeriphClkFreq) for getSysPeriphClkFreq
+    plib035_rcu.o(i.RCU_GetUARTClkFreq) refers to plib035_rcu.o(i.getPeriphClkFreq) for getPeriphClkFreq
+    plib035_rcu.o(i.RCU_GetWDTClkFreq) refers to plib035_rcu.o(i.getSysPeriphClkFreq) for getSysPeriphClkFreq
+    plib035_rcu.o(i.RCU_PLL_AutoConfig) refers to plib035_rcu.o(i.RCU_PLL_StructInit) for RCU_PLL_StructInit
+    plib035_rcu.o(i.RCU_PLL_AutoConfig) refers to plib035_rcu.o(i.RCU_PLL_Init) for RCU_PLL_Init
+    plib035_rcu.o(i.RCU_PLL_AutoConfig) refers to plib035_rcu.o(i.MFLASH_LatencyConfig) for MFLASH_LatencyConfig
+    plib035_rcu.o(i.RCU_PLL_AutoConfig) refers to plib035_rcu.o(i.RCU_SysClkChangeCmd) for RCU_SysClkChangeCmd
+    plib035_rcu.o(i.RCU_PLL_DeInit) refers to plib035_rcu.o(i.RCU_PLL_OutCmd) for RCU_PLL_OutCmd
+    plib035_rcu.o(i.RCU_PLL_Init) refers to plib035_rcu.o(i.RCU_PLL_OutCmd) for RCU_PLL_OutCmd
+    plib035_rcu.o(i.getPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetOSEClkFreq) for RCU_GetOSEClkFreq
+    plib035_rcu.o(i.getPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLClkFreq) for RCU_GetPLLClkFreq
+    plib035_rcu.o(i.getPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLDivClkFreq) for RCU_GetPLLDivClkFreq
+    plib035_rcu.o(i.getPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetOSIClkFreq) for RCU_GetOSIClkFreq
+    plib035_rcu.o(i.getSysClkFreq) refers to plib035_rcu.o(i.RCU_GetOSIClkFreq) for RCU_GetOSIClkFreq
+    plib035_rcu.o(i.getSysClkFreq) refers to plib035_rcu.o(i.RCU_GetOSEClkFreq) for RCU_GetOSEClkFreq
+    plib035_rcu.o(i.getSysClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLClkFreq) for RCU_GetPLLClkFreq
+    plib035_rcu.o(i.getSysClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLDivClkFreq) for RCU_GetPLLDivClkFreq
+    plib035_rcu.o(i.getSysPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetOSEClkFreq) for RCU_GetOSEClkFreq
+    plib035_rcu.o(i.getSysPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLClkFreq) for RCU_GetPLLClkFreq
+    plib035_rcu.o(i.getSysPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetPLLDivClkFreq) for RCU_GetPLLDivClkFreq
+    plib035_rcu.o(i.getSysPeriphClkFreq) refers to plib035_rcu.o(i.RCU_GetOSIClkFreq) for RCU_GetOSIClkFreq
+    plib035_spi.o(i.SPI_DeInit) refers to plib035_spi.o(i.RCU_SPIRstCmd) for RCU_SPIRstCmd
+    plib035_tmr.o(i.TMR_FreqConfig) refers to plib035_tmr.o(i.TMR_SetLoad) for TMR_SetLoad
+    plib035_tmr.o(i.TMR_PeriodConfig) refers to plib035_tmr.o(i.TMR_SetLoad) for TMR_SetLoad
+    plib035_uart.o(i.UART_AutoBaudConfig) refers to plib035_rcu.o(i.RCU_GetUARTClkFreq) for RCU_GetUARTClkFreq
+    plib035_uart.o(i.UART_DeInit) refers to plib035_uart.o(i.RCU_UARTRstCmd) for RCU_UARTRstCmd
+    plib035_uart.o(i.UART_Init) refers to plib035_uart.o(i.UART_AutoBaudConfig) for UART_AutoBaudConfig
+    mb.o(i.eMBClose) refers to mb.o(.data) for eMBState
+    mb.o(i.eMBDisable) refers to mb.o(.data) for eMBState
+    mb.o(i.eMBEnable) refers to mb.o(.data) for eMBState
+    mb.o(i.eMBInit) refers to mbrtu.o(i.eMBRTUInit) for eMBRTUInit
+    mb.o(i.eMBInit) refers to portevent.o(i.xMBPortEventInit) for xMBPortEventInit
+    mb.o(i.eMBInit) refers to mb.o(.data) for ucMBAddress
+    mb.o(i.eMBInit) refers to mbrtu.o(i.eMBRTUStart) for eMBRTUStart
+    mb.o(i.eMBInit) refers to mbrtu.o(i.eMBRTUStop) for eMBRTUStop
+    mb.o(i.eMBInit) refers to mbrtu.o(i.eMBRTUSend) for eMBRTUSend
+    mb.o(i.eMBInit) refers to mbrtu.o(i.eMBRTUReceive) for eMBRTUReceive
+    mb.o(i.eMBInit) refers to portother.o(i.vMBPortClose) for vMBPortClose
+    mb.o(i.eMBInit) refers to mbrtu.o(i.xMBRTUReceiveFSM) for xMBRTUReceiveFSM
+    mb.o(i.eMBInit) refers to mbrtu.o(i.xMBRTUTransmitFSM) for xMBRTUTransmitFSM
+    mb.o(i.eMBInit) refers to mbrtu.o(i.xMBRTUTimerT35Expired) for xMBRTUTimerT35Expired
+    mb.o(i.eMBPoll) refers to portevent.o(i.xMBPortEventGet) for xMBPortEventGet
+    mb.o(i.eMBPoll) refers to portevent.o(i.xMBPortEventPost) for xMBPortEventPost
+    mb.o(i.eMBPoll) refers to mb.o(i.eMBDisable) for eMBDisable
+    mb.o(i.eMBPoll) refers to mb.o(.data) for eMBState
+    mb.o(i.eMBPoll) refers to main.o(.data) for command_status
+    mb.o(i.eMBRegisterCB) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mb.o(i.eMBRegisterCB) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mb.o(i.eMBRegisterCB) refers to mb.o(.data) for xFuncHandlers
+    mb.o(.data) refers to mbfuncother.o(i.eMBFuncReportSlaveID) for eMBFuncReportSlaveID
+    mb.o(.data) refers to mbfuncinput.o(i.eMBFuncReadInputRegister) for eMBFuncReadInputRegister
+    mb.o(.data) refers to mbfuncholding.o(i.eMBFuncReadHoldingRegister) for eMBFuncReadHoldingRegister
+    mb.o(.data) refers to mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister) for eMBFuncWriteMultipleHoldingRegister
+    mb.o(.data) refers to mbfuncholding.o(i.eMBFuncWriteHoldingRegister) for eMBFuncWriteHoldingRegister
+    mb.o(.data) refers to mbfuncholding.o(i.eMBFuncReadWriteMultipleHoldingRegister) for eMBFuncReadWriteMultipleHoldingRegister
+    mb.o(.data) refers to mbfunccoils.o(i.eMBFuncReadCoils) for eMBFuncReadCoils
+    mb.o(.data) refers to mbfunccoils.o(i.eMBFuncWriteCoil) for eMBFuncWriteCoil
+    mb.o(.data) refers to mbfunccoils.o(i.eMBFuncWriteMultipleCoils) for eMBFuncWriteMultipleCoils
+    mb.o(.data) refers to mbfuncdisc.o(i.eMBFuncReadDiscreteInputs) for eMBFuncReadDiscreteInputs
+    mbcrc.o(i.usMBCRC16) refers to mbcrc.o(.constdata) for aucCRCHi
+    mbdefs.o(i.eMBRegCoilsCB) refers to mbutils.o(i.xMBUtilGetBits) for xMBUtilGetBits
+    mbdefs.o(i.eMBRegCoilsCB) refers to mbutils.o(i.xMBUtilSetBits) for xMBUtilSetBits
+    mbdefs.o(i.eMBRegCoilsCB) refers to mbdefs.o(.data) for mb_coils
+    mbdefs.o(i.eMBRegCoilsCB) refers to main.o(.data) for command_status
+    mbdefs.o(i.eMBRegDiscreteCB) refers to mbutils.o(i.xMBUtilGetBits) for xMBUtilGetBits
+    mbdefs.o(i.eMBRegDiscreteCB) refers to mbdefs.o(.data) for mb_discretes
+    mbdefs.o(i.eMBRegHoldingCB) refers to mbdefs.o(.data) for mb_holding_regs_start
+    mbdefs.o(i.eMBRegHoldingCB) refers to mbdefs.o(.bss) for mb_holding_regs
+    mbdefs.o(i.eMBRegInputCB) refers to mbdefs.o(.data) for mb_input_regs_start
+    mbdefs.o(i.eMBRegInputCB) refers to mbdefs.o(.bss) for mb_input_regs
+    mbdefs.o(i.eMBRegInputCB_) refers to mbdefs.o(.data) for mb_input_regs_start
+    mbdefs.o(i.eMBRegInputCB_) refers to mbdefs.o(.bss) for mb_input_regs
+    mbfunccoils.o(i.eMBFuncReadCoils) refers to mbdefs.o(i.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(i.eMBFuncReadCoils) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfunccoils.o(i.eMBFuncWriteCoil) refers to mbdefs.o(i.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(i.eMBFuncWriteCoil) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfunccoils.o(i.eMBFuncWriteMultipleCoils) refers to mbdefs.o(i.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(i.eMBFuncWriteMultipleCoils) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncdisc.o(i.eMBFuncReadDiscreteInputs) refers to mbdefs.o(i.eMBRegDiscreteCB) for eMBRegDiscreteCB
+    mbfuncdisc.o(i.eMBFuncReadDiscreteInputs) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(i.eMBFuncReadHoldingRegister) refers to mbdefs.o(i.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(i.eMBFuncReadHoldingRegister) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(i.eMBFuncReadWriteMultipleHoldingRegister) refers to mbdefs.o(i.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(i.eMBFuncReadWriteMultipleHoldingRegister) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(i.eMBFuncWriteHoldingRegister) refers to mbdefs.o(i.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(i.eMBFuncWriteHoldingRegister) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister) refers to mbdefs.o(i.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncinput.o(i.eMBFuncReadInputRegister) refers to mbdefs.o(i.eMBRegInputCB) for eMBRegInputCB
+    mbfuncinput.o(i.eMBFuncReadInputRegister) refers to mbutils.o(i.prveMBError2Exception) for prveMBError2Exception
+    mbfuncother.o(i.eMBFuncReportSlaveID) refers to memcpya.o(.text) for __aeabi_memcpy
+    mbfuncother.o(i.eMBFuncReportSlaveID) refers to mbfuncother.o(.data) for usMBSlaveIDLen
+    mbfuncother.o(i.eMBFuncReportSlaveID) refers to mbfuncother.o(.bss) for ucMBSlaveID
+    mbfuncother.o(i.eMBSetSlaveID) refers to memcpya.o(.text) for __aeabi_memcpy
+    mbfuncother.o(i.eMBSetSlaveID) refers to mbfuncother.o(.data) for usMBSlaveIDLen
+    mbfuncother.o(i.eMBSetSlaveID) refers to mbfuncother.o(.bss) for ucMBSlaveID
+    mbrtu.o(i.eMBRTUInit) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mbrtu.o(i.eMBRTUInit) refers to portserial.o(i.xMBPortSerialInit) for xMBPortSerialInit
+    mbrtu.o(i.eMBRTUInit) refers to porttimer.o(i.xMBPortTimersInit) for xMBPortTimersInit
+    mbrtu.o(i.eMBRTUInit) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mbrtu.o(i.eMBRTUReceive) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mbrtu.o(i.eMBRTUReceive) refers to mbcrc.o(i.usMBCRC16) for usMBCRC16
+    mbrtu.o(i.eMBRTUReceive) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mbrtu.o(i.eMBRTUReceive) refers to mbrtu.o(.data) for CNTR
+    mbrtu.o(i.eMBRTUReceive) refers to mbrtu.o(.bss) for ucRTUBuf
+    mbrtu.o(i.eMBRTUSend) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mbrtu.o(i.eMBRTUSend) refers to mbcrc.o(i.usMBCRC16) for usMBCRC16
+    mbrtu.o(i.eMBRTUSend) refers to portserial.o(i.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(i.eMBRTUSend) refers to mbrtu.o(i.UART_FlagStatus) for UART_FlagStatus
+    mbrtu.o(i.eMBRTUSend) refers to mbrtu.o(i.xMBRTUTransmitFSM) for xMBRTUTransmitFSM
+    mbrtu.o(i.eMBRTUSend) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mbrtu.o(i.eMBRTUSend) refers to mbrtu.o(.data) for eRcvState
+    mbrtu.o(i.eMBRTUSend) refers to mbrtu.o(.bss) for ucRTUBuf
+    mbrtu.o(i.eMBRTUSend) refers to portserial.o(.data) for xPort
+    mbrtu.o(i.eMBRTUStart) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mbrtu.o(i.eMBRTUStart) refers to portserial.o(i.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(i.eMBRTUStart) refers to porttimer.o(i.vMBPortTimersEnable) for vMBPortTimersEnable
+    mbrtu.o(i.eMBRTUStart) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mbrtu.o(i.eMBRTUStart) refers to mbrtu.o(.data) for eRcvState
+    mbrtu.o(i.eMBRTUStop) refers to portother.o(i.vMBPortEnterCritical) for vMBPortEnterCritical
+    mbrtu.o(i.eMBRTUStop) refers to portserial.o(i.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(i.eMBRTUStop) refers to porttimer.o(i.vMBPortTimersDisable) for vMBPortTimersDisable
+    mbrtu.o(i.eMBRTUStop) refers to portother.o(i.vMBPortExitCritical) for vMBPortExitCritical
+    mbrtu.o(i.xMBRTUReceiveFSM) refers to portserial.o(i.xMBPortSerialGetByte) for xMBPortSerialGetByte
+    mbrtu.o(i.xMBRTUReceiveFSM) refers to porttimer.o(i.vMBPortTimersEnable) for vMBPortTimersEnable
+    mbrtu.o(i.xMBRTUReceiveFSM) refers to mbrtu.o(.data) for eRcvState
+    mbrtu.o(i.xMBRTUReceiveFSM) refers to mbrtu.o(.bss) for ucRTUBuf
+    mbrtu.o(i.xMBRTUTimerT35Expired) refers to portevent.o(i.xMBPortEventPost) for xMBPortEventPost
+    mbrtu.o(i.xMBRTUTimerT35Expired) refers to porttimer.o(i.vMBPortTimersDisable) for vMBPortTimersDisable
+    mbrtu.o(i.xMBRTUTimerT35Expired) refers to mbrtu.o(.data) for eRcvState
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to portserial.o(i.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to portserial.o(i.xMBPortSerialPutByte) for xMBPortSerialPutByte
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to mbrtu.o(i.UART_FlagStatus) for UART_FlagStatus
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to portevent.o(i.xMBPortEventPost) for xMBPortEventPost
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to mbrtu.o(.data) for eSndState
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to mbrtu.o(.bss) for ucRTUBuf
+    mbrtu.o(i.xMBRTUTransmitFSM) refers to portserial.o(.data) for xPort
+    portevent.o(i.xMBPortEventGet) refers to portevent.o(.data) for xEventInQueue
+    portevent.o(i.xMBPortEventInit) refers to portevent.o(.data) for xEventInQueue
+    portevent.o(i.xMBPortEventPost) refers to portevent.o(.data) for xEventInQueue
+    portother.o(i.vMBPortClose) refers to portserial.o(i.vMBPortSerialClose) for vMBPortSerialClose
+    portother.o(i.vMBPortClose) refers to porttimer.o(i.vMBPortTimerClose) for vMBPortTimerClose
+    portother.o(i.vMBPortEnterCritical) refers to portother.o(i.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    portother.o(i.vMBPortEnterCritical) refers to portserial.o(.data) for xPort
+    portother.o(i.vMBPortExitCritical) refers to portother.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    portother.o(i.vMBPortExitCritical) refers to portserial.o(.data) for xPort
+    portserial.o(i.UART0_RX_IRQHandler) refers to mb.o(.data) for pxMBFrameCBByteReceived
+    portserial.o(i.UART0_TD_IRQHandler) refers to portserial.o(i.UART_ITStatusClear) for UART_ITStatusClear
+    portserial.o(i.UART0_TX_IRQHandler) refers to portserial.o(i.UART_ITStatusClear) for UART_ITStatusClear
+    portserial.o(i.UART0_TX_IRQHandler) refers to mb.o(.data) for pxMBFrameCBTransmitterEmpty
+    portserial.o(i.UART1_RX_IRQHandler) refers to mb.o(.data) for pxMBFrameCBByteReceived
+    portserial.o(i.UART1_TD_IRQHandler) refers to portserial.o(i.UART_ITStatusClear) for UART_ITStatusClear
+    portserial.o(i.UART1_TX_IRQHandler) refers to portserial.o(i.UART_ITStatusClear) for UART_ITStatusClear
+    portserial.o(i.UART1_TX_IRQHandler) refers to mb.o(.data) for pxMBFrameCBTransmitterEmpty
+    portserial.o(i.vMBPortSerialClose) refers to portserial.o(i.UART_Cmd) for UART_Cmd
+    portserial.o(i.vMBPortSerialClose) refers to portserial.o(.data) for xPort
+    portserial.o(i.vMBPortSerialEnable) refers to plib035_gpio.o(i.GPIO_Init) for GPIO_Init
+    portserial.o(i.vMBPortSerialEnable) refers to portserial.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    portserial.o(i.vMBPortSerialEnable) refers to portserial.o(i.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    portserial.o(i.vMBPortSerialEnable) refers to portserial.o(.bss) for GPIO_InitStruct
+    portserial.o(i.vMBPortSerialEnable) refers to portserial.o(.data) for xPort
+    portserial.o(i.xMBPortSerialGetByte) refers to portserial.o(.data) for xPort
+    portserial.o(i.xMBPortSerialInit) refers to plib035_gpio.o(i.GPIO_Init) for GPIO_Init
+    portserial.o(i.xMBPortSerialInit) refers to plib035_uart.o(i.UART_StructInit) for UART_StructInit
+    portserial.o(i.xMBPortSerialInit) refers to plib035_uart.o(i.UART_Init) for UART_Init
+    portserial.o(i.xMBPortSerialInit) refers to portserial.o(i.UART_Cmd) for UART_Cmd
+    portserial.o(i.xMBPortSerialInit) refers to portserial.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    portserial.o(i.xMBPortSerialInit) refers to portserial.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    portserial.o(i.xMBPortSerialInit) refers to portserial.o(.data) for xPort
+    portserial.o(i.xMBPortSerialInit) refers to portserial.o(.bss) for GPIO_InitStruct
+    portserial.o(i.xMBPortSerialPutByte) refers to portserial.o(.data) for xPort
+    porttimer.o(i.TMR0_IRQHandler) refers to mb.o(.data) for pxMBPortCBTimerExpired
+    porttimer.o(i.vMBPortTimerClose) refers to porttimer.o(i.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    porttimer.o(i.vMBPortTimerClose) refers to porttimer.o(i.TMR_ITCmd) for TMR_ITCmd
+    porttimer.o(i.vMBPortTimerClose) refers to porttimer.o(i.TMR_Cmd) for TMR_Cmd
+    porttimer.o(i.vMBPortTimerClose) refers to porttimer.o(i.TMR_SetCounter) for TMR_SetCounter
+    porttimer.o(i.vMBPortTimersDisable) refers to porttimer.o(i.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    porttimer.o(i.vMBPortTimersDisable) refers to porttimer.o(i.TMR_Cmd) for TMR_Cmd
+    porttimer.o(i.vMBPortTimersEnable) refers to porttimer.o(i.TMR_Cmd) for TMR_Cmd
+    porttimer.o(i.vMBPortTimersEnable) refers to porttimer.o(i.TMR_SetCounter) for TMR_SetCounter
+    porttimer.o(i.vMBPortTimersEnable) refers to porttimer.o(i.TMR_ITCmd) for TMR_ITCmd
+    porttimer.o(i.vMBPortTimersEnable) refers to porttimer.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    porttimer.o(i.xMBPortTimersInit) refers to plib035_tmr.o(i.TMR_PeriodConfig) for TMR_PeriodConfig
+    porttimer.o(i.xMBPortTimersInit) refers to porttimer.o(i.TMR_ITCmd) for TMR_ITCmd
+    porttimer.o(i.xMBPortTimersInit) refers to porttimer.o(i.TMR_Cmd) for TMR_Cmd
+    porttimer.o(i.xMBPortTimersInit) refers to porttimer.o(i.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    porttimer.o(i.xMBPortTimersInit) refers to system_k1921vk035.o(.data) for SystemCoreClock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    rand.o(.text) refers to rand.o(.data) for .data
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_k1921vk035.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_k1921vk035.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_k1921vk035.o(.rev16_text), (4 bytes).
+    Removing system_k1921vk035.o(.revsh_text), (4 bytes).
+    Removing system_k1921vk035.o(.rrx_text), (6 bytes).
+    Removing startup_k1921vk035.o(HEAP), (512 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(i.timer_init), (96 bytes).
+    Removing processor.o(.rev16_text), (4 bytes).
+    Removing processor.o(.revsh_text), (4 bytes).
+    Removing processor.o(.rrx_text), (6 bytes).
+    Removing processor.o(.constdata), (8 bytes).
+    Removing vk035_it.o(.rev16_text), (4 bytes).
+    Removing vk035_it.o(.revsh_text), (4 bytes).
+    Removing vk035_it.o(.rrx_text), (6 bytes).
+    Removing fw_updater.o(.rev16_text), (4 bytes).
+    Removing fw_updater.o(.revsh_text), (4 bytes).
+    Removing fw_updater.o(.rrx_text), (6 bytes).
+    Removing update_flash_fw.o(.rev16_text), (4 bytes).
+    Removing update_flash_fw.o(.revsh_text), (4 bytes).
+    Removing update_flash_fw.o(.rrx_text), (6 bytes).
+    Removing plib035_adc.o(.rev16_text), (4 bytes).
+    Removing plib035_adc.o(.revsh_text), (4 bytes).
+    Removing plib035_adc.o(.rrx_text), (6 bytes).
+    Removing plib035_adc.o(i.ADC_DC_Init), (192 bytes).
+    Removing plib035_adc.o(i.ADC_DC_StructInit), (18 bytes).
+    Removing plib035_adc.o(i.ADC_DeInit), (16 bytes).
+    Removing plib035_adc.o(i.RCU_ADCRstCmd), (24 bytes).
+    Removing plib035_can.o(.rev16_text), (4 bytes).
+    Removing plib035_can.o(.revsh_text), (4 bytes).
+    Removing plib035_can.o(.rrx_text), (6 bytes).
+    Removing plib035_dma.o(.rev16_text), (4 bytes).
+    Removing plib035_dma.o(.revsh_text), (4 bytes).
+    Removing plib035_dma.o(.rrx_text), (6 bytes).
+    Removing plib035_dma.o(i.DMA_ChannelDeInit), (10 bytes).
+    Removing plib035_dma.o(i.DMA_ChannelInit), (152 bytes).
+    Removing plib035_dma.o(i.DMA_ChannelStructInit), (50 bytes).
+    Removing plib035_dma.o(i.DMA_DeInit), (28 bytes).
+    Removing plib035_dma.o(i.DMA_Init), (140 bytes).
+    Removing plib035_dma.o(i.DMA_StructInit), (28 bytes).
+    Removing plib035_ecap.o(.rev16_text), (4 bytes).
+    Removing plib035_ecap.o(.revsh_text), (4 bytes).
+    Removing plib035_ecap.o(.rrx_text), (6 bytes).
+    Removing plib035_ecap.o(i.ECAP_Capture_Init), (134 bytes).
+    Removing plib035_ecap.o(i.ECAP_Capture_StructInit), (28 bytes).
+    Removing plib035_ecap.o(i.ECAP_DeInit), (56 bytes).
+    Removing plib035_ecap.o(i.ECAP_Init), (50 bytes).
+    Removing plib035_ecap.o(i.ECAP_PWM_Init), (26 bytes).
+    Removing plib035_ecap.o(i.ECAP_PWM_StructInit), (18 bytes).
+    Removing plib035_ecap.o(i.ECAP_StructInit), (12 bytes).
+    Removing plib035_ecap.o(i.RCU_APBRstCmd), (28 bytes).
+    Removing plib035_gpio.o(.rev16_text), (4 bytes).
+    Removing plib035_gpio.o(.revsh_text), (4 bytes).
+    Removing plib035_gpio.o(.rrx_text), (6 bytes).
+    Removing plib035_gpio.o(i.GPIO_DeInit), (40 bytes).
+    Removing plib035_gpio.o(i.RCU_AHBRstCmd), (28 bytes).
+    Removing plib035_i2c.o(.rev16_text), (4 bytes).
+    Removing plib035_i2c.o(.revsh_text), (4 bytes).
+    Removing plib035_i2c.o(.rrx_text), (6 bytes).
+    Removing plib035_i2c.o(i.I2C_FSFreqConfig), (48 bytes).
+    Removing plib035_i2c.o(i.I2C_HSFreqConfig), (48 bytes).
+    Removing plib035_mflash.o(.rev16_text), (4 bytes).
+    Removing plib035_mflash.o(.revsh_text), (4 bytes).
+    Removing plib035_mflash.o(.rrx_text), (6 bytes).
+    Removing plib035_mflash.o(i.MFLASH_EraseFull), (34 bytes).
+    Removing plib035_pmu.o(.rev16_text), (4 bytes).
+    Removing plib035_pmu.o(.revsh_text), (4 bytes).
+    Removing plib035_pmu.o(.rrx_text), (6 bytes).
+    Removing plib035_pwm.o(.rev16_text), (4 bytes).
+    Removing plib035_pwm.o(.revsh_text), (4 bytes).
+    Removing plib035_pwm.o(.rrx_text), (6 bytes).
+    Removing plib035_pwm.o(i.PWM_DB_Init), (50 bytes).
+    Removing plib035_pwm.o(i.PWM_DB_StructInit), (14 bytes).
+    Removing plib035_pwm.o(i.PWM_DeInit), (52 bytes).
+    Removing plib035_pwm.o(i.PWM_ET_Init), (146 bytes).
+    Removing plib035_pwm.o(i.PWM_ET_StructInit), (42 bytes).
+    Removing plib035_pwm.o(i.PWM_HD_Init), (82 bytes).
+    Removing plib035_pwm.o(i.PWM_HD_StructInit), (16 bytes).
+    Removing plib035_pwm.o(i.PWM_TZ_Init), (50 bytes).
+    Removing plib035_pwm.o(i.PWM_TZ_StructInit), (12 bytes).
+    Removing plib035_pwm.o(i.RCU_APBRstCmd), (28 bytes).
+    Removing plib035_qep.o(.rev16_text), (4 bytes).
+    Removing plib035_qep.o(.revsh_text), (4 bytes).
+    Removing plib035_qep.o(.rrx_text), (6 bytes).
+    Removing plib035_qep.o(i.QEP_CAP_Init), (92 bytes).
+    Removing plib035_qep.o(i.QEP_CAP_StructInit), (18 bytes).
+    Removing plib035_qep.o(i.QEP_CMP_Init), (100 bytes).
+    Removing plib035_qep.o(i.QEP_CMP_StructInit), (18 bytes).
+    Removing plib035_qep.o(i.QEP_DeInit), (22 bytes).
+    Removing plib035_qep.o(i.QEP_PC_Init), (128 bytes).
+    Removing plib035_qep.o(i.QEP_PC_StructInit), (24 bytes).
+    Removing plib035_qep.o(i.RCU_APBRstCmd), (28 bytes).
+    Removing plib035_rcu.o(.rev16_text), (4 bytes).
+    Removing plib035_rcu.o(.revsh_text), (4 bytes).
+    Removing plib035_rcu.o(.rrx_text), (6 bytes).
+    Removing plib035_rcu.o(i.RCU_GetClkOutFreq), (52 bytes).
+    Removing plib035_rcu.o(i.RCU_GetSPIClkFreq), (56 bytes).
+    Removing plib035_rcu.o(i.RCU_GetSysClkFreq), (28 bytes).
+    Removing plib035_rcu.o(i.RCU_GetTraceClkFreq), (52 bytes).
+    Removing plib035_rcu.o(i.RCU_GetWDTClkFreq), (52 bytes).
+    Removing plib035_rcu.o(i.RCU_PLL_DeInit), (24 bytes).
+    Removing plib035_rcu.o(i.getSysClkFreq), (60 bytes).
+    Removing plib035_rcu.o(i.getSysPeriphClkFreq), (60 bytes).
+    Removing plib035_spi.o(.rev16_text), (4 bytes).
+    Removing plib035_spi.o(.revsh_text), (4 bytes).
+    Removing plib035_spi.o(.rrx_text), (6 bytes).
+    Removing plib035_spi.o(i.RCU_SPIRstCmd), (24 bytes).
+    Removing plib035_spi.o(i.SPI_DeInit), (16 bytes).
+    Removing plib035_spi.o(i.SPI_Init), (72 bytes).
+    Removing plib035_spi.o(i.SPI_StructInit), (20 bytes).
+    Removing plib035_tmr.o(.rev16_text), (4 bytes).
+    Removing plib035_tmr.o(.revsh_text), (4 bytes).
+    Removing plib035_tmr.o(.rrx_text), (6 bytes).
+    Removing plib035_tmr.o(i.TMR_FreqConfig), (26 bytes).
+    Removing plib035_uart.o(.rev16_text), (4 bytes).
+    Removing plib035_uart.o(.revsh_text), (4 bytes).
+    Removing plib035_uart.o(.rrx_text), (6 bytes).
+    Removing plib035_uart.o(i.RCU_UARTRstCmd), (24 bytes).
+    Removing plib035_uart.o(i.UART_DeInit), (40 bytes).
+    Removing plib035_wdt.o(.rev16_text), (4 bytes).
+    Removing plib035_wdt.o(.revsh_text), (4 bytes).
+    Removing plib035_wdt.o(.rrx_text), (6 bytes).
+    Removing mb.o(.rev16_text), (4 bytes).
+    Removing mb.o(.revsh_text), (4 bytes).
+    Removing mb.o(.rrx_text), (6 bytes).
+    Removing mb.o(i.eMBClose), (40 bytes).
+    Removing mb.o(i.eMBRegisterCB), (144 bytes).
+    Removing mbdefs.o(.rev16_text), (4 bytes).
+    Removing mbdefs.o(.revsh_text), (4 bytes).
+    Removing mbdefs.o(.rrx_text), (6 bytes).
+    Removing mbdefs.o(i.eMBRegInputCB_), (72 bytes).
+    Removing mbfuncother.o(i.eMBSetSlaveID), (120 bytes).
+    Removing mbrtu.o(.rev16_text), (4 bytes).
+    Removing mbrtu.o(.revsh_text), (4 bytes).
+    Removing mbrtu.o(.rrx_text), (6 bytes).
+    Removing portother.o(.rev16_text), (4 bytes).
+    Removing portother.o(.revsh_text), (4 bytes).
+    Removing portother.o(.rrx_text), (6 bytes).
+    Removing portserial.o(.rev16_text), (4 bytes).
+    Removing portserial.o(.revsh_text), (4 bytes).
+    Removing portserial.o(.rrx_text), (6 bytes).
+    Removing porttimer.o(.rev16_text), (4 bytes).
+    Removing porttimer.o(.revsh_text), (4 bytes).
+    Removing porttimer.o(.rrx_text), (6 bytes).
+    Removing porttimer.o(.data), (4 bytes).
+
+145 unused section(s) (total 4110 bytes) removed from the image.
+
+==============================================================================
+
+Adding Veneers to the image
+
+    Adding TT veneer (10 bytes, Long) for call to 'MFLASH_ReadData' from processor.o(i.check_user_data_page).
+    Adding TT veneer (10 bytes, Long) for call to 'MFLASH_ErasePage' from fw_updater.o(i.erase_updater_page).
+    Adding TT veneer (10 bytes, Long) for call to 'write_new_fw' from fw_updater.o(i.perform_fw_update).
+    Adding TT veneer (10 bytes, Long) for call to 'MFLASH_WriteData' from fw_updater.o(i.write_buffer_to_page).
+
+4 Veneer(s) (total 40 bytes) added to the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      344  startup_k1921vk035.o(RESET)
+    ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/stdlib/rand.c           0x00000000   Number         0  rand.o ABSOLUTE
+    ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    Modbus\\mb.c                             0x00000000   Number         0  mb.o ABSOLUTE
+    Modbus\\mbdefs.c                         0x00000000   Number         0  mbdefs.o ABSOLUTE
+    Modbus\\mbrtu.c                          0x00000000   Number         0  mbrtu.o ABSOLUTE
+    Modbus\\portother.c                      0x00000000   Number         0  portother.o ABSOLUTE
+    Modbus\\portserial.c                     0x00000000   Number         0  portserial.o ABSOLUTE
+    Modbus\\porttimer.c                      0x00000000   Number         0  porttimer.o ABSOLUTE
+    Modbus\mb.c                              0x00000000   Number         0  mb.o ABSOLUTE
+    Modbus\mbascii.c                         0x00000000   Number         0  mbascii.o ABSOLUTE
+    Modbus\mbcrc.c                           0x00000000   Number         0  mbcrc.o ABSOLUTE
+    Modbus\mbdefs.c                          0x00000000   Number         0  mbdefs.o ABSOLUTE
+    Modbus\mbfunccoils.c                     0x00000000   Number         0  mbfunccoils.o ABSOLUTE
+    Modbus\mbfuncdiag.c                      0x00000000   Number         0  mbfuncdiag.o ABSOLUTE
+    Modbus\mbfuncdisc.c                      0x00000000   Number         0  mbfuncdisc.o ABSOLUTE
+    Modbus\mbfuncholding.c                   0x00000000   Number         0  mbfuncholding.o ABSOLUTE
+    Modbus\mbfuncinput.c                     0x00000000   Number         0  mbfuncinput.o ABSOLUTE
+    Modbus\mbfuncother.c                     0x00000000   Number         0  mbfuncother.o ABSOLUTE
+    Modbus\mbrtu.c                           0x00000000   Number         0  mbrtu.o ABSOLUTE
+    Modbus\mbtcp.c                           0x00000000   Number         0  mbtcp.o ABSOLUTE
+    Modbus\mbutils.c                         0x00000000   Number         0  mbutils.o ABSOLUTE
+    Modbus\portevent.c                       0x00000000   Number         0  portevent.o ABSOLUTE
+    Modbus\portother.c                       0x00000000   Number         0  portother.o ABSOLUTE
+    Modbus\portserial.c                      0x00000000   Number         0  portserial.o ABSOLUTE
+    Modbus\porttimer.c                       0x00000000   Number         0  porttimer.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    periph\\plib035_adc.c                    0x00000000   Number         0  plib035_adc.o ABSOLUTE
+    periph\\plib035_can.c                    0x00000000   Number         0  plib035_can.o ABSOLUTE
+    periph\\plib035_dma.c                    0x00000000   Number         0  plib035_dma.o ABSOLUTE
+    periph\\plib035_ecap.c                   0x00000000   Number         0  plib035_ecap.o ABSOLUTE
+    periph\\plib035_gpio.c                   0x00000000   Number         0  plib035_gpio.o ABSOLUTE
+    periph\\plib035_i2c.c                    0x00000000   Number         0  plib035_i2c.o ABSOLUTE
+    periph\\plib035_mflash.c                 0x00000000   Number         0  plib035_mflash.o ABSOLUTE
+    periph\\plib035_pmu.c                    0x00000000   Number         0  plib035_pmu.o ABSOLUTE
+    periph\\plib035_pwm.c                    0x00000000   Number         0  plib035_pwm.o ABSOLUTE
+    periph\\plib035_qep.c                    0x00000000   Number         0  plib035_qep.o ABSOLUTE
+    periph\\plib035_rcu.c                    0x00000000   Number         0  plib035_rcu.o ABSOLUTE
+    periph\\plib035_spi.c                    0x00000000   Number         0  plib035_spi.o ABSOLUTE
+    periph\\plib035_tmr.c                    0x00000000   Number         0  plib035_tmr.o ABSOLUTE
+    periph\\plib035_uart.c                   0x00000000   Number         0  plib035_uart.o ABSOLUTE
+    periph\\plib035_wdt.c                    0x00000000   Number         0  plib035_wdt.o ABSOLUTE
+    periph\plib035_adc.c                     0x00000000   Number         0  plib035_adc.o ABSOLUTE
+    periph\plib035_can.c                     0x00000000   Number         0  plib035_can.o ABSOLUTE
+    periph\plib035_dma.c                     0x00000000   Number         0  plib035_dma.o ABSOLUTE
+    periph\plib035_ecap.c                    0x00000000   Number         0  plib035_ecap.o ABSOLUTE
+    periph\plib035_gpio.c                    0x00000000   Number         0  plib035_gpio.o ABSOLUTE
+    periph\plib035_i2c.c                     0x00000000   Number         0  plib035_i2c.o ABSOLUTE
+    periph\plib035_mflash.c                  0x00000000   Number         0  plib035_mflash.o ABSOLUTE
+    periph\plib035_pmu.c                     0x00000000   Number         0  plib035_pmu.o ABSOLUTE
+    periph\plib035_pwm.c                     0x00000000   Number         0  plib035_pwm.o ABSOLUTE
+    periph\plib035_qep.c                     0x00000000   Number         0  plib035_qep.o ABSOLUTE
+    periph\plib035_rcu.c                     0x00000000   Number         0  plib035_rcu.o ABSOLUTE
+    periph\plib035_spi.c                     0x00000000   Number         0  plib035_spi.o ABSOLUTE
+    periph\plib035_tmr.c                     0x00000000   Number         0  plib035_tmr.o ABSOLUTE
+    periph\plib035_uart.c                    0x00000000   Number         0  plib035_uart.o ABSOLUTE
+    periph\plib035_wdt.c                     0x00000000   Number         0  plib035_wdt.o ABSOLUTE
+    src\Processor.c                          0x00000000   Number         0  processor.o ABSOLUTE
+    src\VK035_it.c                           0x00000000   Number         0  vk035_it.o ABSOLUTE
+    src\\Processor.c                         0x00000000   Number         0  processor.o ABSOLUTE
+    src\\VK035_it.c                          0x00000000   Number         0  vk035_it.o ABSOLUTE
+    src\\fw_updater.c                        0x00000000   Number         0  fw_updater.o ABSOLUTE
+    src\\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    src\\update_flash_fw.c                   0x00000000   Number         0  update_flash_fw.o ABSOLUTE
+    src\fw_updater.c                         0x00000000   Number         0  fw_updater.o ABSOLUTE
+    src\main.c                               0x00000000   Number         0  main.o ABSOLUTE
+    src\update_flash_fw.c                    0x00000000   Number         0  update_flash_fw.o ABSOLUTE
+    startup\\system_K1921VK035.c             0x00000000   Number         0  system_k1921vk035.o ABSOLUTE
+    startup\startup_K1921VK035.s             0x00000000   Number         0  startup_k1921vk035.o ABSOLUTE
+    startup\system_K1921VK035.c              0x00000000   Number         0  system_k1921vk035.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000158   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000158   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x0000015c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000160   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000160   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000160   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000168   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000168   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000168   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000168   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x0000016c   Section       36  startup_k1921vk035.o(.text)
+    $v0                                      0x0000016c   Number         0  startup_k1921vk035.o(.text)
+    .text                                    0x00000190   Section        0  rand.o(.text)
+    .text                                    0x000001b4   Section        0  memcpya.o(.text)
+    .text                                    0x000001d8   Section        0  memseta.o(.text)
+    .text                                    0x000001fc   Section        0  memcmp.o(.text)
+    .text                                    0x00000218   Section       36  init.o(.text)
+    .text                                    0x0000023c   Section        0  __dczerorl2.o(.text)
+    i.ADC_SEQ0_IRQHandler                    0x000002bc   Section        0  vk035_it.o(i.ADC_SEQ0_IRQHandler)
+    i.ADC_SEQ1_IRQHandler                    0x00000338   Section        0  vk035_it.o(i.ADC_SEQ1_IRQHandler)
+    i.ADC_SEQ_Cmd                            0x000003b4   Section        0  main.o(i.ADC_SEQ_Cmd)
+    ADC_SEQ_Cmd                              0x000003b5   Thumb Code    26  main.o(i.ADC_SEQ_Cmd)
+    i.ADC_SEQ_GetFIFOData                    0x000003d0   Section        0  vk035_it.o(i.ADC_SEQ_GetFIFOData)
+    ADC_SEQ_GetFIFOData                      0x000003d1   Thumb Code    24  vk035_it.o(i.ADC_SEQ_GetFIFOData)
+    i.ADC_SEQ_ITCmd                          0x000003ec   Section        0  main.o(i.ADC_SEQ_ITCmd)
+    ADC_SEQ_ITCmd                            0x000003ed   Thumb Code    26  main.o(i.ADC_SEQ_ITCmd)
+    i.ADC_SEQ_ITConfig                       0x00000408   Section        0  main.o(i.ADC_SEQ_ITConfig)
+    ADC_SEQ_ITConfig                         0x00000409   Thumb Code    64  main.o(i.ADC_SEQ_ITConfig)
+    i.ADC_SEQ_ITStatusClear                  0x0000044c   Section        0  vk035_it.o(i.ADC_SEQ_ITStatusClear)
+    ADC_SEQ_ITStatusClear                    0x0000044d   Thumb Code    12  vk035_it.o(i.ADC_SEQ_ITStatusClear)
+    i.ADC_SEQ_Init                           0x00000458   Section        0  plib035_adc.o(i.ADC_SEQ_Init)
+    i.ADC_SEQ_SetRestartTimer                0x00000654   Section        0  main.o(i.ADC_SEQ_SetRestartTimer)
+    ADC_SEQ_SetRestartTimer                  0x00000655   Thumb Code    40  main.o(i.ADC_SEQ_SetRestartTimer)
+    i.ADC_SEQ_StructInit                     0x00000680   Section        0  plib035_adc.o(i.ADC_SEQ_StructInit)
+    i.ClkInit                                0x000006c4   Section        0  system_k1921vk035.o(i.ClkInit)
+    i.FPUInit                                0x00000794   Section        0  system_k1921vk035.o(i.FPUInit)
+    i.GPIO_DriveModeConfig                   0x000007c4   Section        0  plib035_gpio.o(i.GPIO_DriveModeConfig)
+    i.GPIO_InModeConfig                      0x000007da   Section        0  plib035_gpio.o(i.GPIO_InModeConfig)
+    i.GPIO_Init                              0x000007f0   Section        0  plib035_gpio.o(i.GPIO_Init)
+    i.GPIO_ModeConfig                        0x00000850   Section        0  plib035_gpio.o(i.GPIO_ModeConfig)
+    GPIO_ModeConfig                          0x00000851   Thumb Code    46  plib035_gpio.o(i.GPIO_ModeConfig)
+    i.GPIO_OutModeConfig                     0x0000087e   Section        0  plib035_gpio.o(i.GPIO_OutModeConfig)
+    i.GPIO_PullModeConfig                    0x00000894   Section        0  plib035_gpio.o(i.GPIO_PullModeConfig)
+    i.GPIO_StructInit                        0x000008aa   Section        0  plib035_gpio.o(i.GPIO_StructInit)
+    i.MFLASH_LatencyConfig                   0x000008c4   Section        0  plib035_rcu.o(i.MFLASH_LatencyConfig)
+    MFLASH_LatencyConfig                     0x000008c5   Thumb Code    14  plib035_rcu.o(i.MFLASH_LatencyConfig)
+    i.PWM_AQ_ActionAConfig                   0x000008d8   Section        0  plib035_pwm.o(i.PWM_AQ_ActionAConfig)
+    PWM_AQ_ActionAConfig                     0x000008d9   Thumb Code    20  plib035_pwm.o(i.PWM_AQ_ActionAConfig)
+    i.PWM_AQ_ActionBConfig                   0x000008ec   Section        0  plib035_pwm.o(i.PWM_AQ_ActionBConfig)
+    PWM_AQ_ActionBConfig                     0x000008ed   Thumb Code    20  plib035_pwm.o(i.PWM_AQ_ActionBConfig)
+    i.PWM_AQ_Init                            0x00000900   Section        0  plib035_pwm.o(i.PWM_AQ_Init)
+    i.PWM_AQ_StructInit                      0x00000980   Section        0  plib035_pwm.o(i.PWM_AQ_StructInit)
+    i.PWM_CMP_CmpADirectLoadCmd              0x0000099c   Section        0  plib035_pwm.o(i.PWM_CMP_CmpADirectLoadCmd)
+    PWM_CMP_CmpADirectLoadCmd                0x0000099d   Thumb Code    10  plib035_pwm.o(i.PWM_CMP_CmpADirectLoadCmd)
+    i.PWM_CMP_CmpALoadEventConfig            0x000009a6   Section        0  plib035_pwm.o(i.PWM_CMP_CmpALoadEventConfig)
+    PWM_CMP_CmpALoadEventConfig              0x000009a7   Thumb Code    10  plib035_pwm.o(i.PWM_CMP_CmpALoadEventConfig)
+    i.PWM_CMP_Init                           0x000009b0   Section        0  plib035_pwm.o(i.PWM_CMP_Init)
+    i.PWM_CMP_SetCmpB                        0x000009f0   Section        0  main.o(i.PWM_CMP_SetCmpB)
+    PWM_CMP_SetCmpB                          0x000009f1   Thumb Code    10  main.o(i.PWM_CMP_SetCmpB)
+    i.PWM_CMP_StructInit                     0x000009fa   Section        0  plib035_pwm.o(i.PWM_CMP_StructInit)
+    i.PWM_TB_Init                            0x00000a0a   Section        0  plib035_pwm.o(i.PWM_TB_Init)
+    i.PWM_TB_StructInit                      0x00000a78   Section        0  plib035_pwm.o(i.PWM_TB_StructInit)
+    i.RCU_APBClkCmd                          0x00000a90   Section        0  main.o(i.RCU_APBClkCmd)
+    RCU_APBClkCmd                            0x00000a91   Thumb Code    22  main.o(i.RCU_APBClkCmd)
+    i.RCU_APBRstCmd                          0x00000aac   Section        0  main.o(i.RCU_APBRstCmd)
+    RCU_APBRstCmd                            0x00000aad   Thumb Code    22  main.o(i.RCU_APBRstCmd)
+    i.RCU_GetADCClkFreq                      0x00000ac8   Section        0  plib035_rcu.o(i.RCU_GetADCClkFreq)
+    i.RCU_GetOSEClkFreq                      0x00000b00   Section        0  plib035_rcu.o(i.RCU_GetOSEClkFreq)
+    i.RCU_GetOSIClkFreq                      0x00000b08   Section        0  plib035_rcu.o(i.RCU_GetOSIClkFreq)
+    i.RCU_GetPLLClkFreq                      0x00000b10   Section        0  plib035_rcu.o(i.RCU_GetPLLClkFreq)
+    i.RCU_GetPLLDivClkFreq                   0x00000b58   Section        0  plib035_rcu.o(i.RCU_GetPLLDivClkFreq)
+    i.RCU_GetUARTClkFreq                     0x00000b74   Section        0  plib035_rcu.o(i.RCU_GetUARTClkFreq)
+    i.RCU_PLL_AutoConfig                     0x00000bb0   Section        0  plib035_rcu.o(i.RCU_PLL_AutoConfig)
+    i.RCU_PLL_Init                           0x00000d58   Section        0  plib035_rcu.o(i.RCU_PLL_Init)
+    i.RCU_PLL_OutCmd                         0x00000dcc   Section        0  plib035_rcu.o(i.RCU_PLL_OutCmd)
+    RCU_PLL_OutCmd                           0x00000dcd   Thumb Code    14  plib035_rcu.o(i.RCU_PLL_OutCmd)
+    i.RCU_PLL_StructInit                     0x00000de0   Section        0  plib035_rcu.o(i.RCU_PLL_StructInit)
+    i.RCU_SysClkChangeCmd                    0x00000df0   Section        0  plib035_rcu.o(i.RCU_SysClkChangeCmd)
+    i.SysTick_Handler                        0x00000e3c   Section        0  vk035_it.o(i.SysTick_Handler)
+    i.SystemCoreClockUpdate                  0x00000e80   Section        0  system_k1921vk035.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00000f10   Section        0  system_k1921vk035.o(i.SystemInit)
+    i.TMR0_IRQHandler                        0x00000f1c   Section        0  porttimer.o(i.TMR0_IRQHandler)
+    i.TMR_Cmd                                0x00000f38   Section        0  porttimer.o(i.TMR_Cmd)
+    TMR_Cmd                                  0x00000f39   Thumb Code    10  porttimer.o(i.TMR_Cmd)
+    i.TMR_ITCmd                              0x00000f42   Section        0  porttimer.o(i.TMR_ITCmd)
+    TMR_ITCmd                                0x00000f43   Thumb Code    10  porttimer.o(i.TMR_ITCmd)
+    i.TMR_PeriodConfig                       0x00000f4c   Section        0  plib035_tmr.o(i.TMR_PeriodConfig)
+    i.TMR_SetCounter                         0x00000f70   Section        0  porttimer.o(i.TMR_SetCounter)
+    TMR_SetCounter                           0x00000f71   Thumb Code     4  porttimer.o(i.TMR_SetCounter)
+    i.TMR_SetLoad                            0x00000f74   Section        0  plib035_tmr.o(i.TMR_SetLoad)
+    TMR_SetLoad                              0x00000f75   Thumb Code     4  plib035_tmr.o(i.TMR_SetLoad)
+    i.UART0_RX_IRQHandler                    0x00000f78   Section        0  portserial.o(i.UART0_RX_IRQHandler)
+    i.UART0_TD_IRQHandler                    0x00000f88   Section        0  portserial.o(i.UART0_TD_IRQHandler)
+    i.UART0_TX_IRQHandler                    0x00000f98   Section        0  portserial.o(i.UART0_TX_IRQHandler)
+    i.UART1_E_RT_IRQHandler                  0x00000fb4   Section        0  portserial.o(i.UART1_E_RT_IRQHandler)
+    i.UART1_RX_IRQHandler                    0x00000fb8   Section        0  portserial.o(i.UART1_RX_IRQHandler)
+    i.UART1_TD_IRQHandler                    0x00000fc8   Section        0  portserial.o(i.UART1_TD_IRQHandler)
+    i.UART1_TX_IRQHandler                    0x00000fd8   Section        0  portserial.o(i.UART1_TX_IRQHandler)
+    i.UART_AutoBaudConfig                    0x00000ff4   Section        0  plib035_uart.o(i.UART_AutoBaudConfig)
+    i.UART_Cmd                               0x0000106c   Section        0  portserial.o(i.UART_Cmd)
+    UART_Cmd                                 0x0000106d   Thumb Code    10  portserial.o(i.UART_Cmd)
+    i.UART_FlagStatus                        0x00001076   Section        0  mbrtu.o(i.UART_FlagStatus)
+    UART_FlagStatus                          0x00001077   Thumb Code    16  mbrtu.o(i.UART_FlagStatus)
+    i.UART_ITStatusClear                     0x00001086   Section        0  portserial.o(i.UART_ITStatusClear)
+    UART_ITStatusClear                       0x00001087   Thumb Code     4  portserial.o(i.UART_ITStatusClear)
+    i.UART_Init                              0x0000108a   Section        0  plib035_uart.o(i.UART_Init)
+    i.UART_StructInit                        0x000010e4   Section        0  plib035_uart.o(i.UART_StructInit)
+    i.__NVIC_DisableIRQ                      0x000010fc   Section        0  portother.o(i.__NVIC_DisableIRQ)
+    __NVIC_DisableIRQ                        0x000010fd   Thumb Code    54  portother.o(i.__NVIC_DisableIRQ)
+    i.__NVIC_DisableIRQ                      0x00001138   Section        0  portserial.o(i.__NVIC_DisableIRQ)
+    __NVIC_DisableIRQ                        0x00001139   Thumb Code    54  portserial.o(i.__NVIC_DisableIRQ)
+    i.__NVIC_DisableIRQ                      0x00001174   Section        0  porttimer.o(i.__NVIC_DisableIRQ)
+    __NVIC_DisableIRQ                        0x00001175   Thumb Code    54  porttimer.o(i.__NVIC_DisableIRQ)
+    i.__NVIC_EnableIRQ                       0x000011b0   Section        0  main.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x000011b1   Thumb Code    26  main.o(i.__NVIC_EnableIRQ)
+    i.__NVIC_EnableIRQ                       0x000011ca   Section        0  portother.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x000011cb   Thumb Code    26  portother.o(i.__NVIC_EnableIRQ)
+    i.__NVIC_EnableIRQ                       0x000011e4   Section        0  portserial.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x000011e5   Thumb Code    26  portserial.o(i.__NVIC_EnableIRQ)
+    i.__NVIC_EnableIRQ                       0x000011fe   Section        0  porttimer.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x000011ff   Thumb Code    26  porttimer.o(i.__NVIC_EnableIRQ)
+    i.__NVIC_SetPriority                     0x00001218   Section        0  portserial.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x00001219   Thumb Code    32  portserial.o(i.__NVIC_SetPriority)
+    i.__NVIC_SystemReset                     0x00001240   Section        0  main.o(i.__NVIC_SystemReset)
+    __NVIC_SystemReset                       0x00001241   Thumb Code    56  main.o(i.__NVIC_SystemReset)
+    i.__scatterload_copy                     0x00001280   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0000128e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001290   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.adc_init                               0x000012a0   Section        0  main.o(i.adc_init)
+    i.check_user_data_page                   0x000013e0   Section        0  processor.o(i.check_user_data_page)
+    i.eMBDisable                             0x0000142c   Section        0  mb.o(i.eMBDisable)
+    i.eMBEnable                              0x00001460   Section        0  mb.o(i.eMBEnable)
+    i.eMBFuncReadCoils                       0x00001488   Section        0  mbfunccoils.o(i.eMBFuncReadCoils)
+    i.eMBFuncReadDiscreteInputs              0x00001536   Section        0  mbfuncdisc.o(i.eMBFuncReadDiscreteInputs)
+    i.eMBFuncReadHoldingRegister             0x000015e2   Section        0  mbfuncholding.o(i.eMBFuncReadHoldingRegister)
+    i.eMBFuncReadInputRegister               0x0000166e   Section        0  mbfuncinput.o(i.eMBFuncReadInputRegister)
+    i.eMBFuncReadWriteMultipleHoldingRegister 0x000016fa   Section        0  mbfuncholding.o(i.eMBFuncReadWriteMultipleHoldingRegister)
+    i.eMBFuncReportSlaveID                   0x000017d0   Section        0  mbfuncother.o(i.eMBFuncReportSlaveID)
+    i.eMBFuncWriteCoil                       0x000017f8   Section        0  mbfunccoils.o(i.eMBFuncWriteCoil)
+    i.eMBFuncWriteHoldingRegister            0x00001868   Section        0  mbfuncholding.o(i.eMBFuncWriteHoldingRegister)
+    i.eMBFuncWriteMultipleCoils              0x000018aa   Section        0  mbfunccoils.o(i.eMBFuncWriteMultipleCoils)
+    i.eMBFuncWriteMultipleHoldingRegister    0x0000193a   Section        0  mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister)
+    i.eMBInit                                0x000019a8   Section        0  mb.o(i.eMBInit)
+    i.eMBPoll                                0x00001a8c   Section        0  mb.o(i.eMBPoll)
+    i.eMBRTUInit                             0x00001be0   Section        0  mbrtu.o(i.eMBRTUInit)
+    i.eMBRTUReceive                          0x00001c38   Section        0  mbrtu.o(i.eMBRTUReceive)
+    i.eMBRTUSend                             0x00001c98   Section        0  mbrtu.o(i.eMBRTUSend)
+    i.eMBRTUStart                            0x00001d54   Section        0  mbrtu.o(i.eMBRTUStart)
+    i.eMBRTUStop                             0x00001d78   Section        0  mbrtu.o(i.eMBRTUStop)
+    i.eMBRegCoilsCB                          0x00001d90   Section        0  mbdefs.o(i.eMBRegCoilsCB)
+    i.eMBRegDiscreteCB                       0x00001e38   Section        0  mbdefs.o(i.eMBRegDiscreteCB)
+    i.eMBRegHoldingCB                        0x00001e94   Section        0  mbdefs.o(i.eMBRegHoldingCB)
+    i.eMBRegInputCB                          0x00001f14   Section        0  mbdefs.o(i.eMBRegInputCB)
+    i.erase_updater_page                     0x00001f78   Section        0  fw_updater.o(i.erase_updater_page)
+    i.evaluate_derivative                    0x00001fa8   Section        0  processor.o(i.evaluate_derivative)
+    i.evaluate_p_polynom                     0x00001fec   Section        0  processor.o(i.evaluate_p_polynom)
+    i.getPeriphClkFreq                       0x00002024   Section        0  plib035_rcu.o(i.getPeriphClkFreq)
+    getPeriphClkFreq                         0x00002025   Thumb Code    60  plib035_rcu.o(i.getPeriphClkFreq)
+    i.init_processor                         0x00002060   Section        0  processor.o(i.init_processor)
+    i.main                                   0x000022dc   Section        0  main.o(i.main)
+    i.perform_auto_addressing                0x00002550   Section        0  main.o(i.perform_auto_addressing)
+    i.perform_fw_update                      0x00002650   Section        0  fw_updater.o(i.perform_fw_update)
+    i.polynom_value                          0x00002790   Section        0  processor.o(i.polynom_value)
+    i.process_analog_output                  0x000027dc   Section        0  main.o(i.process_analog_output)
+    i.process_data                           0x00002a70   Section        0  processor.o(i.process_data)
+    i.prveMBError2Exception                  0x00002e84   Section        0  mbutils.o(i.prveMBError2Exception)
+    i.pwm_init                               0x00002ea8   Section        0  main.o(i.pwm_init)
+    i.read_buffer_from_page                  0x00002f64   Section        0  fw_updater.o(i.read_buffer_from_page)
+    i.read_user_data_page                    0x00002fd0   Section        0  processor.o(i.read_user_data_page)
+    i.set_output_range                       0x0000302c   Section        0  processor.o(i.set_output_range)
+    i.solve_polynom                          0x000031bc   Section        0  processor.o(i.solve_polynom)
+    i.systick_init                           0x00003274   Section        0  main.o(i.systick_init)
+    i.update_user_data                       0x000032c8   Section        0  processor.o(i.update_user_data)
+    i.usMBCRC16                              0x000032e8   Section        0  mbcrc.o(i.usMBCRC16)
+    i.vMBPortClose                           0x00003320   Section        0  portother.o(i.vMBPortClose)
+    i.vMBPortEnterCritical                   0x0000332c   Section        0  portother.o(i.vMBPortEnterCritical)
+    i.vMBPortExitCritical                    0x00003358   Section        0  portother.o(i.vMBPortExitCritical)
+    i.vMBPortSerialClose                     0x00003384   Section        0  portserial.o(i.vMBPortSerialClose)
+    i.vMBPortSerialEnable                    0x000033a8   Section        0  portserial.o(i.vMBPortSerialEnable)
+    i.vMBPortTimerClose                      0x0000348c   Section        0  porttimer.o(i.vMBPortTimerClose)
+    i.vMBPortTimersDisable                   0x000034b4   Section        0  porttimer.o(i.vMBPortTimersDisable)
+    i.vMBPortTimersEnable                    0x000034cc   Section        0  porttimer.o(i.vMBPortTimersEnable)
+    i.write_buffer_to_page                   0x000034fc   Section        0  fw_updater.o(i.write_buffer_to_page)
+    i.write_user_data_page                   0x00003574   Section        0  processor.o(i.write_user_data_page)
+    i.xMBPortEventGet                        0x000035e0   Section        0  portevent.o(i.xMBPortEventGet)
+    i.xMBPortEventInit                       0x00003604   Section        0  portevent.o(i.xMBPortEventInit)
+    i.xMBPortEventPost                       0x00003614   Section        0  portevent.o(i.xMBPortEventPost)
+    i.xMBPortSerialGetByte                   0x0000362c   Section        0  portserial.o(i.xMBPortSerialGetByte)
+    i.xMBPortSerialInit                      0x00003654   Section        0  portserial.o(i.xMBPortSerialInit)
+    i.xMBPortSerialPutByte                   0x00003838   Section        0  portserial.o(i.xMBPortSerialPutByte)
+    i.xMBPortTimersInit                      0x00003860   Section        0  porttimer.o(i.xMBPortTimersInit)
+    i.xMBRTUReceiveFSM                       0x000038f0   Section        0  mbrtu.o(i.xMBRTUReceiveFSM)
+    i.xMBRTUTimerT35Expired                  0x00003984   Section        0  mbrtu.o(i.xMBRTUTimerT35Expired)
+    i.xMBRTUTransmitFSM                      0x000039c4   Section        0  mbrtu.o(i.xMBRTUTransmitFSM)
+    i.xMBUtilGetBits                         0x00003a58   Section        0  mbutils.o(i.xMBUtilGetBits)
+    i.xMBUtilSetBits                         0x00003a82   Section        0  mbutils.o(i.xMBUtilSetBits)
+    .constdata                               0x00003ae2   Section      512  mbcrc.o(.constdata)
+    aucCRCHi                                 0x00003ae2   Data         256  mbcrc.o(.constdata)
+    aucCRCLo                                 0x00003be2   Data         256  mbcrc.o(.constdata)
+    RAMCODE                                  0x20000000   Section        0  update_flash_fw.o(RAMCODE)
+    i.MFLASH_BusyStatus                      0x20000088   Section        0  plib035_mflash.o(i.MFLASH_BusyStatus)
+    MFLASH_BusyStatus                        0x20000089   Thumb Code    10  plib035_mflash.o(i.MFLASH_BusyStatus)
+    i.MFLASH_ErasePage                       0x20000098   Section        0  plib035_mflash.o(i.MFLASH_ErasePage)
+    i.MFLASH_ReadData                        0x200000c8   Section        0  plib035_mflash.o(i.MFLASH_ReadData)
+    i.MFLASH_SetAddr                         0x20000114   Section        0  plib035_mflash.o(i.MFLASH_SetAddr)
+    MFLASH_SetAddr                           0x20000115   Thumb Code     6  plib035_mflash.o(i.MFLASH_SetAddr)
+    i.MFLASH_SetCmd                          0x20000120   Section        0  plib035_mflash.o(i.MFLASH_SetCmd)
+    MFLASH_SetCmd                            0x20000121   Thumb Code    12  plib035_mflash.o(i.MFLASH_SetCmd)
+    i.MFLASH_WriteData                       0x20000134   Section        0  plib035_mflash.o(i.MFLASH_WriteData)
+    .data                                    0x20000184   Section        4  system_k1921vk035.o(.data)
+    .data                                    0x20000188   Section       29  main.o(.data)
+    .data                                    0x200001a8   Section      110  processor.o(.data)
+    .data                                    0x20000218   Section      181  mb.o(.data)
+    ucMBAddress                              0x20000218   Data           1  mb.o(.data)
+    eMBCurrentMode                           0x20000219   Data           1  mb.o(.data)
+    eMBState                                 0x2000021a   Data           1  mb.o(.data)
+    peMBFrameSendCur                         0x2000021c   Data           4  mb.o(.data)
+    pvMBFrameStartCur                        0x20000220   Data           4  mb.o(.data)
+    pvMBFrameStopCur                         0x20000224   Data           4  mb.o(.data)
+    peMBFrameReceiveCur                      0x20000228   Data           4  mb.o(.data)
+    pvMBFrameCloseCur                        0x2000022c   Data           4  mb.o(.data)
+    xFuncHandlers                            0x20000244   Data         128  mb.o(.data)
+    ucMBFrame                                0x200002c4   Data           4  mb.o(.data)
+    ucRcvAddress                             0x200002c8   Data           1  mb.o(.data)
+    ucFunctionCode                           0x200002c9   Data           1  mb.o(.data)
+    usLength                                 0x200002ca   Data           2  mb.o(.data)
+    eException                               0x200002cc   Data           1  mb.o(.data)
+    .data                                    0x200002ce   Section       17  mbdefs.o(.data)
+    .data                                    0x200002e0   Section        2  mbfuncother.o(.data)
+    usMBSlaveIDLen                           0x200002e0   Data           2  mbfuncother.o(.data)
+    .data                                    0x200002e4   Section       15  mbrtu.o(.data)
+    eSndState                                0x200002e4   Data           1  mbrtu.o(.data)
+    eRcvState                                0x200002e5   Data           1  mbrtu.o(.data)
+    pucSndBufferCur                          0x200002e8   Data           4  mbrtu.o(.data)
+    usSndBufferCount                         0x200002ec   Data           2  mbrtu.o(.data)
+    usRcvBufferPos                           0x200002ee   Data           2  mbrtu.o(.data)
+    CNTR                                     0x200002f0   Data           2  mbrtu.o(.data)
+    .data                                    0x200002f3   Section        2  portevent.o(.data)
+    eQueuedEvent                             0x200002f3   Data           1  portevent.o(.data)
+    xEventInQueue                            0x200002f4   Data           1  portevent.o(.data)
+    .data                                    0x200002f8   Section        7  portserial.o(.data)
+    .data                                    0x20000300   Section        4  rand.o(.data)
+    _rand_state                              0x20000300   Data           4  rand.o(.data)
+    .bss                                     0x20000304   Section     1576  processor.o(.bss)
+    .bss                                     0x2000092c   Section     1280  mbdefs.o(.bss)
+    .bss                                     0x20000e2c   Section       32  mbfuncother.o(.bss)
+    ucMBSlaveID                              0x20000e2c   Data          32  mbfuncother.o(.bss)
+    .bss                                     0x20000e4c   Section      256  mbrtu.o(.bss)
+    .bss                                     0x20000f4c   Section       84  portserial.o(.bss)
+    STACK                                    0x20000fa0   Section     1024  startup_k1921vk035.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_k1921vk035.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000158   Data           0  startup_k1921vk035.o(RESET)
+    __Vectors_Size                           0x00000158   Number         0  startup_k1921vk035.o ABSOLUTE
+    __main                                   0x00000159   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000159   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x0000015d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000161   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000161   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000161   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000161   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000169   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000169   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x0000016d   Thumb Code     8  startup_k1921vk035.o(.text)
+    NMI_Handler                              0x00000175   Thumb Code     2  startup_k1921vk035.o(.text)
+    HardFault_Handler                        0x00000177   Thumb Code     2  startup_k1921vk035.o(.text)
+    MemManage_Handler                        0x00000179   Thumb Code     2  startup_k1921vk035.o(.text)
+    BusFault_Handler                         0x0000017b   Thumb Code     2  startup_k1921vk035.o(.text)
+    UsageFault_Handler                       0x0000017d   Thumb Code     2  startup_k1921vk035.o(.text)
+    SVC_Handler                              0x0000017f   Thumb Code     2  startup_k1921vk035.o(.text)
+    DebugMon_Handler                         0x00000181   Thumb Code     2  startup_k1921vk035.o(.text)
+    PendSV_Handler                           0x00000183   Thumb Code     2  startup_k1921vk035.o(.text)
+    ADC_DC_IRQHandler                        0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN0_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN10_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN11_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN12_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN13_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN14_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN15_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN1_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN2_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN3_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN4_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN5_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN6_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN7_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN8_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    CAN9_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH0_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH10_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH11_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH12_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH13_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH14_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH15_IRQHandler                      0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH1_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH2_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH3_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH4_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH5_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH6_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH7_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH8_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    DMA_CH9_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    ECAP0_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    ECAP1_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    ECAP2_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    FPU_IRQHandler                           0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    GPIOA_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    GPIOB_IRQHandler                         0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    I2C_IRQHandler                           0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    MFLASH_IRQHandler                        0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM0_HD_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM0_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM0_TZ_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM1_HD_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM1_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM1_TZ_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM2_HD_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM2_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    PWM2_TZ_IRQHandler                       0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    QEP_IRQHandler                           0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    RCU_IRQHandler                           0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    SPI_RO_RT_IRQHandler                     0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    SPI_RX_IRQHandler                        0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    SPI_TX_IRQHandler                        0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    TMR1_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    TMR2_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    TMR3_IRQHandler                          0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    UART0_E_RT_IRQHandler                    0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    WDT_IRQHandler                           0x00000187   Thumb Code     0  startup_k1921vk035.o(.text)
+    rand                                     0x00000191   Thumb Code    20  rand.o(.text)
+    srand                                    0x000001a5   Thumb Code     6  rand.o(.text)
+    __aeabi_memcpy                           0x000001b5   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x000001b5   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x000001b5   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x000001d9   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x000001d9   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x000001d9   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x000001e7   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x000001e7   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x000001e7   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x000001eb   Thumb Code    18  memseta.o(.text)
+    memcmp                                   0x000001fd   Thumb Code    26  memcmp.o(.text)
+    __scatterload                            0x00000219   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000219   Thumb Code     0  init.o(.text)
+    __decompress                             0x0000023d   Thumb Code     0  __dczerorl2.o(.text)
+    __decompress1                            0x0000023d   Thumb Code    86  __dczerorl2.o(.text)
+    Long Thumb to Thumb Veneer to MFLASH_ReadData 0x00000293   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to MFLASH_ErasePage 0x0000029d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to write_new_fw 0x000002a7   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to MFLASH_WriteData 0x000002b1   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    ADC_SEQ0_IRQHandler                      0x000002bd   Thumb Code   102  vk035_it.o(i.ADC_SEQ0_IRQHandler)
+    ADC_SEQ1_IRQHandler                      0x00000339   Thumb Code   102  vk035_it.o(i.ADC_SEQ1_IRQHandler)
+    ADC_SEQ_Init                             0x00000459   Thumb Code   504  plib035_adc.o(i.ADC_SEQ_Init)
+    ADC_SEQ_StructInit                       0x00000681   Thumb Code    68  plib035_adc.o(i.ADC_SEQ_StructInit)
+    ClkInit                                  0x000006c5   Thumb Code   196  system_k1921vk035.o(i.ClkInit)
+    FPUInit                                  0x00000795   Thumb Code    42  system_k1921vk035.o(i.FPUInit)
+    GPIO_DriveModeConfig                     0x000007c5   Thumb Code    22  plib035_gpio.o(i.GPIO_DriveModeConfig)
+    GPIO_InModeConfig                        0x000007db   Thumb Code    22  plib035_gpio.o(i.GPIO_InModeConfig)
+    GPIO_Init                                0x000007f1   Thumb Code    96  plib035_gpio.o(i.GPIO_Init)
+    GPIO_OutModeConfig                       0x0000087f   Thumb Code    22  plib035_gpio.o(i.GPIO_OutModeConfig)
+    GPIO_PullModeConfig                      0x00000895   Thumb Code    22  plib035_gpio.o(i.GPIO_PullModeConfig)
+    GPIO_StructInit                          0x000008ab   Thumb Code    24  plib035_gpio.o(i.GPIO_StructInit)
+    PWM_AQ_Init                              0x00000901   Thumb Code   128  plib035_pwm.o(i.PWM_AQ_Init)
+    PWM_AQ_StructInit                        0x00000981   Thumb Code    28  plib035_pwm.o(i.PWM_AQ_StructInit)
+    PWM_CMP_Init                             0x000009b1   Thumb Code    64  plib035_pwm.o(i.PWM_CMP_Init)
+    PWM_CMP_StructInit                       0x000009fb   Thumb Code    16  plib035_pwm.o(i.PWM_CMP_StructInit)
+    PWM_TB_Init                              0x00000a0b   Thumb Code   110  plib035_pwm.o(i.PWM_TB_Init)
+    PWM_TB_StructInit                        0x00000a79   Thumb Code    24  plib035_pwm.o(i.PWM_TB_StructInit)
+    RCU_GetADCClkFreq                        0x00000ac9   Thumb Code    52  plib035_rcu.o(i.RCU_GetADCClkFreq)
+    RCU_GetOSEClkFreq                        0x00000b01   Thumb Code     4  plib035_rcu.o(i.RCU_GetOSEClkFreq)
+    RCU_GetOSIClkFreq                        0x00000b09   Thumb Code     4  plib035_rcu.o(i.RCU_GetOSIClkFreq)
+    RCU_GetPLLClkFreq                        0x00000b11   Thumb Code    58  plib035_rcu.o(i.RCU_GetPLLClkFreq)
+    RCU_GetPLLDivClkFreq                     0x00000b59   Thumb Code    22  plib035_rcu.o(i.RCU_GetPLLDivClkFreq)
+    RCU_GetUARTClkFreq                       0x00000b75   Thumb Code    56  plib035_rcu.o(i.RCU_GetUARTClkFreq)
+    RCU_PLL_AutoConfig                       0x00000bb1   Thumb Code   374  plib035_rcu.o(i.RCU_PLL_AutoConfig)
+    RCU_PLL_Init                             0x00000d59   Thumb Code   106  plib035_rcu.o(i.RCU_PLL_Init)
+    RCU_PLL_StructInit                       0x00000de1   Thumb Code    16  plib035_rcu.o(i.RCU_PLL_StructInit)
+    RCU_SysClkChangeCmd                      0x00000df1   Thumb Code    72  plib035_rcu.o(i.RCU_SysClkChangeCmd)
+    SysTick_Handler                          0x00000e3d   Thumb Code    60  vk035_it.o(i.SysTick_Handler)
+    SystemCoreClockUpdate                    0x00000e81   Thumb Code   126  system_k1921vk035.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00000f11   Thumb Code    12  system_k1921vk035.o(i.SystemInit)
+    TMR0_IRQHandler                          0x00000f1d   Thumb Code    20  porttimer.o(i.TMR0_IRQHandler)
+    TMR_PeriodConfig                         0x00000f4d   Thumb Code    32  plib035_tmr.o(i.TMR_PeriodConfig)
+    UART0_RX_IRQHandler                      0x00000f79   Thumb Code    10  portserial.o(i.UART0_RX_IRQHandler)
+    UART0_TD_IRQHandler                      0x00000f89   Thumb Code    12  portserial.o(i.UART0_TD_IRQHandler)
+    UART0_TX_IRQHandler                      0x00000f99   Thumb Code    18  portserial.o(i.UART0_TX_IRQHandler)
+    UART1_E_RT_IRQHandler                    0x00000fb5   Thumb Code     2  portserial.o(i.UART1_E_RT_IRQHandler)
+    UART1_RX_IRQHandler                      0x00000fb9   Thumb Code    10  portserial.o(i.UART1_RX_IRQHandler)
+    UART1_TD_IRQHandler                      0x00000fc9   Thumb Code    12  portserial.o(i.UART1_TD_IRQHandler)
+    UART1_TX_IRQHandler                      0x00000fd9   Thumb Code    18  portserial.o(i.UART1_TX_IRQHandler)
+    UART_AutoBaudConfig                      0x00000ff5   Thumb Code   112  plib035_uart.o(i.UART_AutoBaudConfig)
+    UART_Init                                0x0000108b   Thumb Code    90  plib035_uart.o(i.UART_Init)
+    UART_StructInit                          0x000010e5   Thumb Code    24  plib035_uart.o(i.UART_StructInit)
+    __scatterload_copy                       0x00001281   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0000128f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001291   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    adc_init                                 0x000012a1   Thumb Code   306  main.o(i.adc_init)
+    check_user_data_page                     0x000013e1   Thumb Code    72  processor.o(i.check_user_data_page)
+    eMBDisable                               0x0000142d   Thumb Code    42  mb.o(i.eMBDisable)
+    eMBEnable                                0x00001461   Thumb Code    32  mb.o(i.eMBEnable)
+    eMBFuncReadCoils                         0x00001489   Thumb Code   174  mbfunccoils.o(i.eMBFuncReadCoils)
+    eMBFuncReadDiscreteInputs                0x00001537   Thumb Code   172  mbfuncdisc.o(i.eMBFuncReadDiscreteInputs)
+    eMBFuncReadHoldingRegister               0x000015e3   Thumb Code   140  mbfuncholding.o(i.eMBFuncReadHoldingRegister)
+    eMBFuncReadInputRegister                 0x0000166f   Thumb Code   140  mbfuncinput.o(i.eMBFuncReadInputRegister)
+    eMBFuncReadWriteMultipleHoldingRegister  0x000016fb   Thumb Code   212  mbfuncholding.o(i.eMBFuncReadWriteMultipleHoldingRegister)
+    eMBFuncReportSlaveID                     0x000017d1   Thumb Code    30  mbfuncother.o(i.eMBFuncReportSlaveID)
+    eMBFuncWriteCoil                         0x000017f9   Thumb Code   112  mbfunccoils.o(i.eMBFuncWriteCoil)
+    eMBFuncWriteHoldingRegister              0x00001869   Thumb Code    66  mbfuncholding.o(i.eMBFuncWriteHoldingRegister)
+    eMBFuncWriteMultipleCoils                0x000018ab   Thumb Code   144  mbfunccoils.o(i.eMBFuncWriteMultipleCoils)
+    eMBFuncWriteMultipleHoldingRegister      0x0000193b   Thumb Code   110  mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister)
+    eMBInit                                  0x000019a9   Thumb Code   150  mb.o(i.eMBInit)
+    eMBPoll                                  0x00001a8d   Thumb Code   294  mb.o(i.eMBPoll)
+    eMBRTUInit                               0x00001be1   Thumb Code    84  mbrtu.o(i.eMBRTUInit)
+    eMBRTUReceive                            0x00001c39   Thumb Code    82  mbrtu.o(i.eMBRTUReceive)
+    eMBRTUSend                               0x00001c99   Thumb Code   154  mbrtu.o(i.eMBRTUSend)
+    eMBRTUStart                              0x00001d55   Thumb Code    30  mbrtu.o(i.eMBRTUStart)
+    eMBRTUStop                               0x00001d79   Thumb Code    24  mbrtu.o(i.eMBRTUStop)
+    eMBRegCoilsCB                            0x00001d91   Thumb Code   160  mbdefs.o(i.eMBRegCoilsCB)
+    eMBRegDiscreteCB                         0x00001e39   Thumb Code    88  mbdefs.o(i.eMBRegDiscreteCB)
+    eMBRegHoldingCB                          0x00001e95   Thumb Code   120  mbdefs.o(i.eMBRegHoldingCB)
+    eMBRegInputCB                            0x00001f15   Thumb Code    82  mbdefs.o(i.eMBRegInputCB)
+    erase_updater_page                       0x00001f79   Thumb Code    44  fw_updater.o(i.erase_updater_page)
+    evaluate_derivative                      0x00001fa9   Thumb Code    58  processor.o(i.evaluate_derivative)
+    evaluate_p_polynom                       0x00001fed   Thumb Code    46  processor.o(i.evaluate_p_polynom)
+    init_processor                           0x00002061   Thumb Code   516  processor.o(i.init_processor)
+    main                                     0x000022dd   Thumb Code   562  main.o(i.main)
+    perform_auto_addressing                  0x00002551   Thumb Code   222  main.o(i.perform_auto_addressing)
+    perform_fw_update                        0x00002651   Thumb Code   300  fw_updater.o(i.perform_fw_update)
+    polynom_value                            0x00002791   Thumb Code    66  processor.o(i.polynom_value)
+    process_analog_output                    0x000027dd   Thumb Code   592  main.o(i.process_analog_output)
+    process_data                             0x00002a71   Thumb Code   918  processor.o(i.process_data)
+    prveMBError2Exception                    0x00002e85   Thumb Code    34  mbutils.o(i.prveMBError2Exception)
+    pwm_init                                 0x00002ea9   Thumb Code   174  main.o(i.pwm_init)
+    read_buffer_from_page                    0x00002f65   Thumb Code    98  fw_updater.o(i.read_buffer_from_page)
+    read_user_data_page                      0x00002fd1   Thumb Code    86  processor.o(i.read_user_data_page)
+    set_output_range                         0x0000302d   Thumb Code   378  processor.o(i.set_output_range)
+    solve_polynom                            0x000031bd   Thumb Code   170  processor.o(i.solve_polynom)
+    systick_init                             0x00003275   Thumb Code    72  main.o(i.systick_init)
+    update_user_data                         0x000032c9   Thumb Code    24  processor.o(i.update_user_data)
+    usMBCRC16                                0x000032e9   Thumb Code    48  mbcrc.o(i.usMBCRC16)
+    vMBPortClose                             0x00003321   Thumb Code    12  portother.o(i.vMBPortClose)
+    vMBPortEnterCritical                     0x0000332d   Thumb Code    40  portother.o(i.vMBPortEnterCritical)
+    vMBPortExitCritical                      0x00003359   Thumb Code    40  portother.o(i.vMBPortExitCritical)
+    vMBPortSerialClose                       0x00003385   Thumb Code    24  portserial.o(i.vMBPortSerialClose)
+    vMBPortSerialEnable                      0x000033a9   Thumb Code   216  portserial.o(i.vMBPortSerialEnable)
+    vMBPortTimerClose                        0x0000348d   Thumb Code    34  porttimer.o(i.vMBPortTimerClose)
+    vMBPortTimersDisable                     0x000034b5   Thumb Code    18  porttimer.o(i.vMBPortTimersDisable)
+    vMBPortTimersEnable                      0x000034cd   Thumb Code    42  porttimer.o(i.vMBPortTimersEnable)
+    write_buffer_to_page                     0x000034fd   Thumb Code   106  fw_updater.o(i.write_buffer_to_page)
+    write_user_data_page                     0x00003575   Thumb Code   102  processor.o(i.write_user_data_page)
+    xMBPortEventGet                          0x000035e1   Thumb Code    26  portevent.o(i.xMBPortEventGet)
+    xMBPortEventInit                         0x00003605   Thumb Code    10  portevent.o(i.xMBPortEventInit)
+    xMBPortEventPost                         0x00003615   Thumb Code    16  portevent.o(i.xMBPortEventPost)
+    xMBPortSerialGetByte                     0x0000362d   Thumb Code    26  portserial.o(i.xMBPortSerialGetByte)
+    xMBPortSerialInit                        0x00003655   Thumb Code   448  portserial.o(i.xMBPortSerialInit)
+    xMBPortSerialPutByte                     0x00003839   Thumb Code    26  portserial.o(i.xMBPortSerialPutByte)
+    xMBPortTimersInit                        0x00003861   Thumb Code   130  porttimer.o(i.xMBPortTimersInit)
+    xMBRTUReceiveFSM                         0x000038f1   Thumb Code   132  mbrtu.o(i.xMBRTUReceiveFSM)
+    xMBRTUTimerT35Expired                    0x00003985   Thumb Code    60  mbrtu.o(i.xMBRTUTimerT35Expired)
+    xMBRTUTransmitFSM                        0x000039c5   Thumb Code   120  mbrtu.o(i.xMBRTUTransmitFSM)
+    xMBUtilGetBits                           0x00003a59   Thumb Code    42  mbutils.o(i.xMBUtilGetBits)
+    xMBUtilSetBits                           0x00003a83   Thumb Code    96  mbutils.o(i.xMBUtilSetBits)
+    Region$$Table$$Base                      0x00003ce4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00003d14   Number         0  anon$$obj.o(Region$$Table)
+    write_new_fw                             0x20000001   Thumb Code   128  update_flash_fw.o(RAMCODE)
+    MFLASH_ErasePage                         0x20000099   Thumb Code    48  plib035_mflash.o(i.MFLASH_ErasePage)
+    MFLASH_ReadData                          0x200000c9   Thumb Code    72  plib035_mflash.o(i.MFLASH_ReadData)
+    MFLASH_WriteData                         0x20000135   Thumb Code    74  plib035_mflash.o(i.MFLASH_WriteData)
+    SystemCoreClock                          0x20000184   Data           4  system_k1921vk035.o(.data)
+    mb_baudrate                              0x20000188   Data           4  main.o(.data)
+    mb_address                               0x2000018c   Data           1  main.o(.data)
+    systick_counter                          0x20000190   Data           4  main.o(.data)
+    flash_load_counter1                      0x20000194   Data           4  main.o(.data)
+    flash_load_counter2                      0x20000198   Data           4  main.o(.data)
+    calculation_time                         0x2000019c   Data           4  main.o(.data)
+    system_status                            0x200001a0   Data           2  main.o(.data)
+    command_status                           0x200001a2   Data           2  main.o(.data)
+    mb_status                                0x200001a4   Data           1  main.o(.data)
+    tmp                                      0x200001a8   Data           4  processor.o(.data)
+    p_out1                                   0x200001ac   Data           4  processor.o(.data)
+    p_out1_0                                 0x200001b0   Data           4  processor.o(.data)
+    p_out1_bak                               0x200001b4   Data           4  processor.o(.data)
+    p_out1_max                               0x200001b8   Data           4  processor.o(.data)
+    p_out1_min                               0x200001bc   Data           4  processor.o(.data)
+    err_out1                                 0x200001c0   Data           4  processor.o(.data)
+    iteration_cap                            0x200001c4   Data           1  processor.o(.data)
+    t1_sub_value                             0x200001c8   Data           4  processor.o(.data)
+    dt1_corr_min                             0x200001cc   Data           4  processor.o(.data)
+    dt1_corr_max                             0x200001d0   Data           4  processor.o(.data)
+    t1_sample_volume                         0x200001d4   Data           2  processor.o(.data)
+    p1_sample_volume                         0x200001d6   Data           2  processor.o(.data)
+    p1_adc_max                               0x200001d8   Data           4  processor.o(.data)
+    p1_adc_min                               0x200001dc   Data           4  processor.o(.data)
+    t1_adc_max                               0x200001e0   Data           4  processor.o(.data)
+    t1_adc_min                               0x200001e4   Data           4  processor.o(.data)
+    p1_buffer_full                           0x200001e8   Data           1  processor.o(.data)
+    t1_buffer_full                           0x200001e9   Data           1  processor.o(.data)
+    p1_sliding_sum                           0x200001ec   Data           4  processor.o(.data)
+    t1_sliding_sum                           0x200001f0   Data           4  processor.o(.data)
+    p1_buf_index                             0x200001f4   Data           1  processor.o(.data)
+    t1_buf_index                             0x200001f5   Data           1  processor.o(.data)
+    elec_t_max                               0x200001f6   Data           2  processor.o(.data)
+    p1_adc_f                                 0x200001f8   Data           4  processor.o(.data)
+    t1_adc_f                                 0x200001fc   Data           4  processor.o(.data)
+    p1_adc_n                                 0x20000200   Data           2  processor.o(.data)
+    t1_adc_n                                 0x20000202   Data           2  processor.o(.data)
+    out1_Umin                                0x20000204   Data           4  processor.o(.data)
+    out1_Umax                                0x20000208   Data           4  processor.o(.data)
+    out1_Nmin                                0x2000020c   Data           2  processor.o(.data)
+    out1_Nmax                                0x2000020e   Data           2  processor.o(.data)
+    out1_N                                   0x20000210   Data           2  processor.o(.data)
+    evaluation_period                        0x20000212   Data           2  processor.o(.data)
+    copy                                     0x20000214   Data           2  processor.o(.data)
+    pxMBFrameCBByteReceived                  0x20000230   Data           4  mb.o(.data)
+    pxMBFrameCBTransmitterEmpty              0x20000234   Data           4  mb.o(.data)
+    pxMBPortCBTimerExpired                   0x20000238   Data           4  mb.o(.data)
+    pxMBFrameCBReceiveFSMCur                 0x2000023c   Data           4  mb.o(.data)
+    pxMBFrameCBTransmitFSMCur                0x20000240   Data           4  mb.o(.data)
+    mb_input_regs_start                      0x200002ce   Data           2  mbdefs.o(.data)
+    usRegInputStart_CBL                      0x200002d0   Data           2  mbdefs.o(.data)
+    usRegInputBuf_CBL                        0x200002d2   Data           2  mbdefs.o(.data)
+    mb_holding_regs_start                    0x200002d4   Data           2  mbdefs.o(.data)
+    mb_coils_start                           0x200002d6   Data           2  mbdefs.o(.data)
+    mb_coils                                 0x200002d8   Data           2  mbdefs.o(.data)
+    mb_discretes_start                       0x200002da   Data           2  mbdefs.o(.data)
+    mb_discretes                             0x200002dc   Data           3  mbdefs.o(.data)
+    idle_ctr                                 0x200002f2   Data           1  mbrtu.o(.data)
+    index5                                   0x200002f8   Data           4  portserial.o(.data)
+    INDXX                                    0x200002fc   Data           2  portserial.o(.data)
+    xPort                                    0x200002fe   Data           1  portserial.o(.data)
+    polynom_p1_factors                       0x20000304   Data          16  processor.o(.bss)
+    polynom_factors                          0x20000314   Data         160  processor.o(.bss)
+    p1_adc_buffer                            0x200003b4   Data         128  processor.o(.bss)
+    t1_adc_buffer                            0x20000434   Data         128  processor.o(.bss)
+    out1_corr_table                          0x200004b4   Data         120  processor.o(.bss)
+    user_data                                0x2000052c   Data        1024  processor.o(.bss)
+    mb_input_regs                            0x2000092c   Data         256  mbdefs.o(.bss)
+    mb_holding_regs                          0x20000a2c   Data        1024  mbdefs.o(.bss)
+    ucRTUBuf                                 0x20000e4c   Data         256  mbrtu.o(.bss)
+    GPIO_InitStruct                          0x20000f4c   Data          12  portserial.o(.bss)
+    UART_InitStruct                          0x20000f58   Data          12  portserial.o(.bss)
+    data                                     0x20000f64   Data          40  portserial.o(.bss)
+    arraySENT                                0x20000f8c   Data          20  portserial.o(.bss)
+    __initial_sp                             0x200013a0   Data           0  startup_k1921vk035.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000159
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00004018, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00003ef0])
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00003d14, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000158   Data   RO           76    RESET               startup_k1921vk035.o
+    0x00000158   0x00000000   Code   RO         2174  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000158   0x00000004   Code   RO         2188    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0000015c   0x00000004   Code   RO         2191    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000160   0x00000000   Code   RO         2193    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000160   0x00000000   Code   RO         2195    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000160   0x00000008   Code   RO         2196    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000168   0x00000000   Code   RO         2198    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000168   0x00000000   Code   RO         2200    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000168   0x00000004   Code   RO         2189    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0000016c   0x00000024   Code   RO           77    .text               startup_k1921vk035.o
+    0x00000190   0x00000024   Code   RO         2177    .text               mc_w.l(rand.o)
+    0x000001b4   0x00000024   Code   RO         2180    .text               mc_w.l(memcpya.o)
+    0x000001d8   0x00000024   Code   RO         2182    .text               mc_w.l(memseta.o)
+    0x000001fc   0x0000001a   Code   RO         2184    .text               mc_w.l(memcmp.o)
+    0x00000216   0x00000002   PAD
+    0x00000218   0x00000024   Code   RO         2202    .text               mc_w.l(init.o)
+    0x0000023c   0x00000056   Code   RO         2212    .text               mc_w.l(__dczerorl2.o)
+    0x00000292   0x0000000a   Ven    RO         2214    Veneer$$Code        anon$$obj.o
+    0x0000029c   0x0000000a   Ven    RO         2215    Veneer$$Code        anon$$obj.o
+    0x000002a6   0x0000000a   Ven    RO         2216    Veneer$$Code        anon$$obj.o
+    0x000002b0   0x0000000a   Ven    RO         2217    Veneer$$Code        anon$$obj.o
+    0x000002ba   0x00000002   PAD
+    0x000002bc   0x0000007c   Code   RO          415    i.ADC_SEQ0_IRQHandler  vk035_it.o
+    0x00000338   0x0000007c   Code   RO          416    i.ADC_SEQ1_IRQHandler  vk035_it.o
+    0x000003b4   0x0000001a   Code   RO           84    i.ADC_SEQ_Cmd       main.o
+    0x000003ce   0x00000002   PAD
+    0x000003d0   0x0000001c   Code   RO          417    i.ADC_SEQ_GetFIFOData  vk035_it.o
+    0x000003ec   0x0000001a   Code   RO           85    i.ADC_SEQ_ITCmd     main.o
+    0x00000406   0x00000002   PAD
+    0x00000408   0x00000044   Code   RO           86    i.ADC_SEQ_ITConfig  main.o
+    0x0000044c   0x0000000c   Code   RO          418    i.ADC_SEQ_ITStatusClear  vk035_it.o
+    0x00000458   0x000001fc   Code   RO          546    i.ADC_SEQ_Init      plib035_adc.o
+    0x00000654   0x0000002c   Code   RO           87    i.ADC_SEQ_SetRestartTimer  main.o
+    0x00000680   0x00000044   Code   RO          547    i.ADC_SEQ_StructInit  plib035_adc.o
+    0x000006c4   0x000000d0   Code   RO            4    i.ClkInit           system_k1921vk035.o
+    0x00000794   0x00000030   Code   RO            5    i.FPUInit           system_k1921vk035.o
+    0x000007c4   0x00000016   Code   RO          806    i.GPIO_DriveModeConfig  plib035_gpio.o
+    0x000007da   0x00000016   Code   RO          807    i.GPIO_InModeConfig  plib035_gpio.o
+    0x000007f0   0x00000060   Code   RO          808    i.GPIO_Init         plib035_gpio.o
+    0x00000850   0x0000002e   Code   RO          809    i.GPIO_ModeConfig   plib035_gpio.o
+    0x0000087e   0x00000016   Code   RO          810    i.GPIO_OutModeConfig  plib035_gpio.o
+    0x00000894   0x00000016   Code   RO          811    i.GPIO_PullModeConfig  plib035_gpio.o
+    0x000008aa   0x00000018   Code   RO          812    i.GPIO_StructInit   plib035_gpio.o
+    0x000008c2   0x00000002   PAD
+    0x000008c4   0x00000014   Code   RO         1196    i.MFLASH_LatencyConfig  plib035_rcu.o
+    0x000008d8   0x00000014   Code   RO          992    i.PWM_AQ_ActionAConfig  plib035_pwm.o
+    0x000008ec   0x00000014   Code   RO          993    i.PWM_AQ_ActionBConfig  plib035_pwm.o
+    0x00000900   0x00000080   Code   RO          994    i.PWM_AQ_Init       plib035_pwm.o
+    0x00000980   0x0000001c   Code   RO          995    i.PWM_AQ_StructInit  plib035_pwm.o
+    0x0000099c   0x0000000a   Code   RO          996    i.PWM_CMP_CmpADirectLoadCmd  plib035_pwm.o
+    0x000009a6   0x0000000a   Code   RO          997    i.PWM_CMP_CmpALoadEventConfig  plib035_pwm.o
+    0x000009b0   0x00000040   Code   RO          998    i.PWM_CMP_Init      plib035_pwm.o
+    0x000009f0   0x0000000a   Code   RO           88    i.PWM_CMP_SetCmpB   main.o
+    0x000009fa   0x00000010   Code   RO          999    i.PWM_CMP_StructInit  plib035_pwm.o
+    0x00000a0a   0x0000006e   Code   RO         1007    i.PWM_TB_Init       plib035_pwm.o
+    0x00000a78   0x00000018   Code   RO         1008    i.PWM_TB_StructInit  plib035_pwm.o
+    0x00000a90   0x0000001c   Code   RO           89    i.RCU_APBClkCmd     main.o
+    0x00000aac   0x0000001c   Code   RO           90    i.RCU_APBRstCmd     main.o
+    0x00000ac8   0x00000038   Code   RO         1197    i.RCU_GetADCClkFreq  plib035_rcu.o
+    0x00000b00   0x00000008   Code   RO         1199    i.RCU_GetOSEClkFreq  plib035_rcu.o
+    0x00000b08   0x00000008   Code   RO         1200    i.RCU_GetOSIClkFreq  plib035_rcu.o
+    0x00000b10   0x00000048   Code   RO         1201    i.RCU_GetPLLClkFreq  plib035_rcu.o
+    0x00000b58   0x0000001c   Code   RO         1202    i.RCU_GetPLLDivClkFreq  plib035_rcu.o
+    0x00000b74   0x0000003c   Code   RO         1206    i.RCU_GetUARTClkFreq  plib035_rcu.o
+    0x00000bb0   0x000001a8   Code   RO         1208    i.RCU_PLL_AutoConfig  plib035_rcu.o
+    0x00000d58   0x00000074   Code   RO         1210    i.RCU_PLL_Init      plib035_rcu.o
+    0x00000dcc   0x00000014   Code   RO         1211    i.RCU_PLL_OutCmd    plib035_rcu.o
+    0x00000de0   0x00000010   Code   RO         1212    i.RCU_PLL_StructInit  plib035_rcu.o
+    0x00000df0   0x0000004c   Code   RO         1213    i.RCU_SysClkChangeCmd  plib035_rcu.o
+    0x00000e3c   0x00000044   Code   RO          419    i.SysTick_Handler   vk035_it.o
+    0x00000e80   0x00000090   Code   RO            6    i.SystemCoreClockUpdate  system_k1921vk035.o
+    0x00000f10   0x0000000c   Code   RO            7    i.SystemInit        system_k1921vk035.o
+    0x00000f1c   0x0000001c   Code   RO         2095    i.TMR0_IRQHandler   porttimer.o
+    0x00000f38   0x0000000a   Code   RO         2096    i.TMR_Cmd           porttimer.o
+    0x00000f42   0x0000000a   Code   RO         2097    i.TMR_ITCmd         porttimer.o
+    0x00000f4c   0x00000024   Code   RO         1389    i.TMR_PeriodConfig  plib035_tmr.o
+    0x00000f70   0x00000004   Code   RO         2098    i.TMR_SetCounter    porttimer.o
+    0x00000f74   0x00000004   Code   RO         1390    i.TMR_SetLoad       plib035_tmr.o
+    0x00000f78   0x00000010   Code   RO         1965    i.UART0_RX_IRQHandler  portserial.o
+    0x00000f88   0x00000010   Code   RO         1966    i.UART0_TD_IRQHandler  portserial.o
+    0x00000f98   0x0000001c   Code   RO         1967    i.UART0_TX_IRQHandler  portserial.o
+    0x00000fb4   0x00000002   Code   RO         1968    i.UART1_E_RT_IRQHandler  portserial.o
+    0x00000fb6   0x00000002   PAD
+    0x00000fb8   0x00000010   Code   RO         1969    i.UART1_RX_IRQHandler  portserial.o
+    0x00000fc8   0x00000010   Code   RO         1970    i.UART1_TD_IRQHandler  portserial.o
+    0x00000fd8   0x0000001c   Code   RO         1971    i.UART1_TX_IRQHandler  portserial.o
+    0x00000ff4   0x00000078   Code   RO         1427    i.UART_AutoBaudConfig  plib035_uart.o
+    0x0000106c   0x0000000a   Code   RO         1972    i.UART_Cmd          portserial.o
+    0x00001076   0x00000010   Code   RO         1776    i.UART_FlagStatus   mbrtu.o
+    0x00001086   0x00000004   Code   RO         1973    i.UART_ITStatusClear  portserial.o
+    0x0000108a   0x0000005a   Code   RO         1429    i.UART_Init         plib035_uart.o
+    0x000010e4   0x00000018   Code   RO         1430    i.UART_StructInit   plib035_uart.o
+    0x000010fc   0x0000003c   Code   RO         1914    i.__NVIC_DisableIRQ  portother.o
+    0x00001138   0x0000003c   Code   RO         1974    i.__NVIC_DisableIRQ  portserial.o
+    0x00001174   0x0000003c   Code   RO         2099    i.__NVIC_DisableIRQ  porttimer.o
+    0x000011b0   0x0000001a   Code   RO           91    i.__NVIC_EnableIRQ  main.o
+    0x000011ca   0x0000001a   Code   RO         1915    i.__NVIC_EnableIRQ  portother.o
+    0x000011e4   0x0000001a   Code   RO         1975    i.__NVIC_EnableIRQ  portserial.o
+    0x000011fe   0x0000001a   Code   RO         2100    i.__NVIC_EnableIRQ  porttimer.o
+    0x00001218   0x00000028   Code   RO         1976    i.__NVIC_SetPriority  portserial.o
+    0x00001240   0x00000040   Code   RO           92    i.__NVIC_SystemReset  main.o
+    0x00001280   0x0000000e   Code   RO         2206    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0000128e   0x00000002   Code   RO         2207    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00001290   0x0000000e   Code   RO         2208    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0000129e   0x00000002   PAD
+    0x000012a0   0x00000140   Code   RO           93    i.adc_init          main.o
+    0x000013e0   0x0000004c   Code   RO          293    i.check_user_data_page  processor.o
+    0x0000142c   0x00000034   Code   RO         1498    i.eMBDisable        mb.o
+    0x00001460   0x00000028   Code   RO         1499    i.eMBEnable         mb.o
+    0x00001488   0x000000ae   Code   RO         1671    i.eMBFuncReadCoils  mbfunccoils.o
+    0x00001536   0x000000ac   Code   RO         1698    i.eMBFuncReadDiscreteInputs  mbfuncdisc.o
+    0x000015e2   0x0000008c   Code   RO         1710    i.eMBFuncReadHoldingRegister  mbfuncholding.o
+    0x0000166e   0x0000008c   Code   RO         1740    i.eMBFuncReadInputRegister  mbfuncinput.o
+    0x000016fa   0x000000d4   Code   RO         1711    i.eMBFuncReadWriteMultipleHoldingRegister  mbfuncholding.o
+    0x000017ce   0x00000002   PAD
+    0x000017d0   0x00000028   Code   RO         1752    i.eMBFuncReportSlaveID  mbfuncother.o
+    0x000017f8   0x00000070   Code   RO         1672    i.eMBFuncWriteCoil  mbfunccoils.o
+    0x00001868   0x00000042   Code   RO         1712    i.eMBFuncWriteHoldingRegister  mbfuncholding.o
+    0x000018aa   0x00000090   Code   RO         1673    i.eMBFuncWriteMultipleCoils  mbfunccoils.o
+    0x0000193a   0x0000006e   Code   RO         1713    i.eMBFuncWriteMultipleHoldingRegister  mbfuncholding.o
+    0x000019a8   0x000000e4   Code   RO         1500    i.eMBInit           mb.o
+    0x00001a8c   0x00000154   Code   RO         1501    i.eMBPoll           mb.o
+    0x00001be0   0x00000058   Code   RO         1777    i.eMBRTUInit        mbrtu.o
+    0x00001c38   0x00000060   Code   RO         1778    i.eMBRTUReceive     mbrtu.o
+    0x00001c98   0x000000bc   Code   RO         1779    i.eMBRTUSend        mbrtu.o
+    0x00001d54   0x00000024   Code   RO         1780    i.eMBRTUStart       mbrtu.o
+    0x00001d78   0x00000018   Code   RO         1781    i.eMBRTUStop        mbrtu.o
+    0x00001d90   0x000000a8   Code   RO         1618    i.eMBRegCoilsCB     mbdefs.o
+    0x00001e38   0x0000005c   Code   RO         1619    i.eMBRegDiscreteCB  mbdefs.o
+    0x00001e94   0x00000080   Code   RO         1620    i.eMBRegHoldingCB   mbdefs.o
+    0x00001f14   0x00000064   Code   RO         1621    i.eMBRegInputCB     mbdefs.o
+    0x00001f78   0x00000030   Code   RO          468    i.erase_updater_page  fw_updater.o
+    0x00001fa8   0x00000044   Code   RO          294    i.evaluate_derivative  processor.o
+    0x00001fec   0x00000038   Code   RO          295    i.evaluate_p_polynom  processor.o
+    0x00002024   0x0000003c   Code   RO         1214    i.getPeriphClkFreq  plib035_rcu.o
+    0x00002060   0x0000027c   Code   RO          296    i.init_processor    processor.o
+    0x000022dc   0x00000274   Code   RO           94    i.main              main.o
+    0x00002550   0x00000100   Code   RO           95    i.perform_auto_addressing  main.o
+    0x00002650   0x00000140   Code   RO          469    i.perform_fw_update  fw_updater.o
+    0x00002790   0x0000004c   Code   RO          297    i.polynom_value     processor.o
+    0x000027dc   0x00000294   Code   RO           96    i.process_analog_output  main.o
+    0x00002a70   0x00000414   Code   RO          298    i.process_data      processor.o
+    0x00002e84   0x00000022   Code   RO         1861    i.prveMBError2Exception  mbutils.o
+    0x00002ea6   0x00000002   PAD
+    0x00002ea8   0x000000bc   Code   RO           97    i.pwm_init          main.o
+    0x00002f64   0x0000006c   Code   RO          470    i.read_buffer_from_page  fw_updater.o
+    0x00002fd0   0x0000005c   Code   RO          299    i.read_user_data_page  processor.o
+    0x0000302c   0x00000190   Code   RO          300    i.set_output_range  processor.o
+    0x000031bc   0x000000b8   Code   RO          301    i.solve_polynom     processor.o
+    0x00003274   0x00000054   Code   RO           98    i.systick_init      main.o
+    0x000032c8   0x00000020   Code   RO          302    i.update_user_data  processor.o
+    0x000032e8   0x00000038   Code   RO         1601    i.usMBCRC16         mbcrc.o
+    0x00003320   0x0000000c   Code   RO         1916    i.vMBPortClose      portother.o
+    0x0000332c   0x0000002c   Code   RO         1917    i.vMBPortEnterCritical  portother.o
+    0x00003358   0x0000002c   Code   RO         1918    i.vMBPortExitCritical  portother.o
+    0x00003384   0x00000024   Code   RO         1977    i.vMBPortSerialClose  portserial.o
+    0x000033a8   0x000000e4   Code   RO         1978    i.vMBPortSerialEnable  portserial.o
+    0x0000348c   0x00000028   Code   RO         2101    i.vMBPortTimerClose  porttimer.o
+    0x000034b4   0x00000018   Code   RO         2102    i.vMBPortTimersDisable  porttimer.o
+    0x000034cc   0x00000030   Code   RO         2103    i.vMBPortTimersEnable  porttimer.o
+    0x000034fc   0x00000078   Code   RO          471    i.write_buffer_to_page  fw_updater.o
+    0x00003574   0x0000006c   Code   RO          303    i.write_user_data_page  processor.o
+    0x000035e0   0x00000024   Code   RO         1885    i.xMBPortEventGet   portevent.o
+    0x00003604   0x00000010   Code   RO         1886    i.xMBPortEventInit  portevent.o
+    0x00003614   0x00000018   Code   RO         1887    i.xMBPortEventPost  portevent.o
+    0x0000362c   0x00000028   Code   RO         1979    i.xMBPortSerialGetByte  portserial.o
+    0x00003654   0x000001e4   Code   RO         1980    i.xMBPortSerialInit  portserial.o
+    0x00003838   0x00000028   Code   RO         1981    i.xMBPortSerialPutByte  portserial.o
+    0x00003860   0x00000090   Code   RO         2104    i.xMBPortTimersInit  porttimer.o
+    0x000038f0   0x00000094   Code   RO         1782    i.xMBRTUReceiveFSM  mbrtu.o
+    0x00003984   0x00000040   Code   RO         1783    i.xMBRTUTimerT35Expired  mbrtu.o
+    0x000039c4   0x00000094   Code   RO         1784    i.xMBRTUTransmitFSM  mbrtu.o
+    0x00003a58   0x0000002a   Code   RO         1862    i.xMBUtilGetBits    mbutils.o
+    0x00003a82   0x00000060   Code   RO         1863    i.xMBUtilSetBits    mbutils.o
+    0x00003ae2   0x00000200   Data   RO         1602    .constdata          mbcrc.o
+    0x00003ce2   0x00000002   PAD
+    0x00003ce4   0x00000030   Data   RO         2204    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000013a0, Max: 0x00004000, ABSOLUTE, COMPRESSED[0x00000058])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000088   Code   RO          515    RAMCODE             update_flash_fw.o
+    0x20000088   0x00000010   Code   RO          914    i.MFLASH_BusyStatus  plib035_mflash.o
+    0x20000098   0x00000030   Code   RO          916    i.MFLASH_ErasePage  plib035_mflash.o
+    0x200000c8   0x0000004c   Code   RO          917    i.MFLASH_ReadData   plib035_mflash.o
+    0x20000114   0x0000000c   Code   RO          918    i.MFLASH_SetAddr    plib035_mflash.o
+    0x20000120   0x00000014   Code   RO          919    i.MFLASH_SetCmd     plib035_mflash.o
+    0x20000134   0x00000050   Code   RO          920    i.MFLASH_WriteData  plib035_mflash.o
+    0x20000184   0x00000004   Data   RW            8    .data               system_k1921vk035.o
+    0x20000188   0x0000001d   Data   RW          100    .data               main.o
+    0x200001a5   0x00000003   PAD
+    0x200001a8   0x0000006e   Data   RW          306    .data               processor.o
+    0x20000216   0x00000002   PAD
+    0x20000218   0x000000b5   Data   RW         1503    .data               mb.o
+    0x200002cd   0x00000001   PAD
+    0x200002ce   0x00000011   Data   RW         1624    .data               mbdefs.o
+    0x200002df   0x00000001   PAD
+    0x200002e0   0x00000002   Data   RW         1755    .data               mbfuncother.o
+    0x200002e2   0x00000002   PAD
+    0x200002e4   0x0000000f   Data   RW         1786    .data               mbrtu.o
+    0x200002f3   0x00000002   Data   RW         1888    .data               portevent.o
+    0x200002f5   0x00000003   PAD
+    0x200002f8   0x00000007   Data   RW         1983    .data               portserial.o
+    0x200002ff   0x00000001   PAD
+    0x20000300   0x00000004   Data   RW         2178    .data               mc_w.l(rand.o)
+    0x20000304   0x00000628   Zero   RW          304    .bss                processor.o
+    0x2000092c   0x00000500   Zero   RW         1623    .bss                mbdefs.o
+    0x20000e2c   0x00000020   Zero   RW         1754    .bss                mbfuncother.o
+    0x20000e4c   0x00000100   Zero   RW         1785    .bss                mbrtu.o
+    0x20000f4c   0x00000054   Zero   RW         1982    .bss                portserial.o
+    0x20000fa0   0x00000400   Zero   RW           74    STACK               startup_k1921vk035.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       596         48          0          0          0       2568   fw_updater.o
+      2456        236          0         29          0     268874   main.o
+       660        142          0        181          0       7526   mb.o
+         0          0          0          0          0        613   mbascii.o
+        56          8        512          0          0       1084   mbcrc.o
+       488         38          0         17       1280       4558   mbdefs.o
+       430          0          0          0          0       3550   mbfunccoils.o
+       172          0          0          0          0       1460   mbfuncdisc.o
+       528          0          0          0          0       4755   mbfuncholding.o
+       140          0          0          0          0       1407   mbfuncinput.o
+        40         10          0          2         32       1191   mbfuncother.o
+       808        106          0         15        256      10842   mbrtu.o
+       172          0          0          0          0       2370   mbutils.o
+       576          4          0          0          0      11680   plib035_adc.o
+       254          0          0          0          0       9996   plib035_gpio.o
+       252         30          0          0          0       5576   plib035_mflash.o
+       430          0          0          0          0      21472   plib035_pwm.o
+       964        112          0          0          0      18951   plib035_rcu.o
+        40          4          0          0          0       2311   plib035_tmr.o
+       234          8          0          0          0       6772   plib035_uart.o
+        76         24          0          2          0       1976   portevent.o
+       186         14          0          0          0      32027   portother.o
+      1090        142          0          7         84      53636   portserial.o
+       394         46          0          0          0      15167   porttimer.o
+      2772        336          0        110       1576      15759   processor.o
+        36          8        344          0       1024        808   startup_k1921vk035.o
+       412         36          0          4          0       7131   system_k1921vk035.o
+       136          8          0          0          0      30438   update_flash_fw.o
+       356         56          0          0          0      10334   vk035_it.o
+
+    ----------------------------------------------------------------------
+     14808       1416        906        380       4252     554832   Object Totals
+        40          0         48          0          0          0   (incl. Generated)
+        14          0          2         13          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        86          0          0          0          0          0   __dczerorl2.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        26          0          0          0          0         80   memcmp.o
+        36          0          0          0          0         68   memcpya.o
+        36          0          0          0          0        108   memseta.o
+        36         10          0          4          0        136   rand.o
+
+    ----------------------------------------------------------------------
+       310         26          0          4          0        460   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       306         26          0          4          0        460   mc_w.l
+
+    ----------------------------------------------------------------------
+       310         26          0          4          0        460   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     15118       1442        906        384       4252     541572   Grand Totals
+     15118       1442        906         88       4252     541572   ELF Image Totals (compressed)
+     15118       1442        906         88          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                16024 (  15.65kB)
+    Total RW  Size (RW Data + ZI Data)              4636 (   4.53kB)
+    Total ROM Size (Code + RO Data + RW Data)      16112 (  15.73kB)
+
+==============================================================================
+

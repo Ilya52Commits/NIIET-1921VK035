@@ -1,0 +1,11 @@
+.\objects\bsp.o: bsp\bsp.c
+.\objects\bsp.o: bsp\bsp.h
+.\objects\bsp.o: .\startup\K1921VK035.h
+.\objects\bsp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp.o: .\CMSIS\core_cm4.h
+.\objects\bsp.o: .\CMSIS\cmsis_version.h
+.\objects\bsp.o: .\CMSIS\cmsis_compiler.h
+.\objects\bsp.o: .\CMSIS\cmsis_armcc.h
+.\objects\bsp.o: .\CMSIS\mpu_armv7.h
+.\objects\bsp.o: .\startup\system_K1921VK035.h
+.\objects\bsp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

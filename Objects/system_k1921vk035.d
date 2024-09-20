@@ -1,0 +1,9 @@
+.\objects\system_k1921vk035.o: startup\system_K1921VK035.c
+.\objects\system_k1921vk035.o: startup\system_K1921VK035.h
+.\objects\system_k1921vk035.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_k1921vk035.o: startup\K1921VK035.h
+.\objects\system_k1921vk035.o: .\CMSIS\core_cm4.h
+.\objects\system_k1921vk035.o: .\CMSIS\cmsis_version.h
+.\objects\system_k1921vk035.o: .\CMSIS\cmsis_compiler.h
+.\objects\system_k1921vk035.o: .\CMSIS\cmsis_armcc.h
+.\objects\system_k1921vk035.o: .\CMSIS\mpu_armv7.h

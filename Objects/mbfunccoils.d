@@ -1,0 +1,9 @@
+.\objects\mbfunccoils.o: Modbus\mbfunccoils.c
+.\objects\mbfunccoils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mbfunccoils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mbfunccoils.o: Modbus\port.h
+.\objects\mbfunccoils.o: Modbus\mb.h
+.\objects\mbfunccoils.o: Modbus\mbport.h
+.\objects\mbfunccoils.o: Modbus\mbproto.h
+.\objects\mbfunccoils.o: Modbus\mbframe.h
+.\objects\mbfunccoils.o: Modbus\mbconfig.h

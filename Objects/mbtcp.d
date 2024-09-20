@@ -1,0 +1,10 @@
+.\objects\mbtcp.o: Modbus\mbtcp.c
+.\objects\mbtcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mbtcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mbtcp.o: Modbus\port.h
+.\objects\mbtcp.o: Modbus\mb.h
+.\objects\mbtcp.o: Modbus\mbport.h
+.\objects\mbtcp.o: Modbus\mbproto.h
+.\objects\mbtcp.o: Modbus\mbconfig.h
+.\objects\mbtcp.o: Modbus\mbtcp.h
+.\objects\mbtcp.o: Modbus\mbframe.h
